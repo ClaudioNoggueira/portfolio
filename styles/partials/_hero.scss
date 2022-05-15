@@ -1,0 +1,36 @@
+// TYPOGRAPHY
+$font-size-hero-description: 1.8rem;
+
+$line-height-hero-description: 1.5;
+
+// COLORS
+$background-color-hero: #e7faef;
+
+.hero {
+  & {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    justify-content: center;
+    padding: 6.4rem;
+    text-align: center;
+  }
+
+  &-section {
+    background-color: $background-color-hero;
+  }
+
+  &-description {
+    font-size: $font-size-hero-description;
+    line-height: $line-height-hero-description;
+    width: 40rem;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40rem;
+  }
+}

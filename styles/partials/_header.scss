@@ -6,10 +6,14 @@ $font-weight-medium: 500;
 $font-weight-semi-bold: 600;
 
 // COLORS
-$background-color-header: #e7faef;
+$brand-color: hsl(146, 89%, 43%); //#0cd061
+$brand-hue-color: 146;
 
+$background-color-header: hsl($brand-hue-color, 66%, 94%);
+$background-color-nav-contact-hover: hsl($brand-hue-color, 89%, 39%);
+
+$font-color-main-nav-link-hover: hsl($brand-hue-color, 89%, 39%);
 $font-color-header: #333;
-$font-color-header-hover: #0bbb57;
 
 .main {
   &-header {
@@ -42,7 +46,7 @@ $font-color-header-hover: #0bbb57;
       }
     }
     .logo:hover {
-      color: $font-color-header-hover;
+      color: $font-color-main-nav-link-hover;
     }
   }
 
@@ -62,7 +66,18 @@ $font-color-header-hover: #0bbb57;
 
     &-link:hover,
     &-link:active {
-      color: $font-color-header-hover;
+      color: $font-color-main-nav-link-hover;
+    }
+
+    .nav-contact {
+      border-radius: 6px;
+      color: #fff;
+      background-color: $brand-color;
+      padding: 1.2rem 2.4rem;
+    }
+
+    .nav-contact:hover {
+      background-color: $background-color-nav-contact-hover;
     }
   }
 }

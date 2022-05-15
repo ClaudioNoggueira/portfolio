@@ -1,11 +1,29 @@
+// TYPOGRAPHY
 $font-stack: "Rubik", sans-serif;
 
+$font-size-heading-primary: 5.2rem;
+$font-size-subheading: 2.4rem;
+$font-size-btn: 1.8rem;
+
+$font-weight-default: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+
+$letter-spacing-heading-primary: -0.5px;
+
+$line-height-heading-primary: 1.05;
+
+// COLORS
 $brand-color: #0cd061;
 
 $background-color-body: #fff;
+$background-color-btn-hover: #0bbb57;
+
 $font-color-body: #555;
 $font-color-link-hover: #0bbb57;
-$font-weight-default: 400;
+$font-color-heading-primary: #333;
+$font-color-btn--outline: #555;
 
 * {
   box-sizing: border-box;
@@ -33,4 +51,64 @@ a:link,
 a:visited {
   text-decoration: none;
   transition: all 0.3s;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 4.8rem;
+}
+
+// HEADINGS
+.heading {
+  &-primary {
+    color: $font-color-heading-primary;
+    font: {
+      size: $font-size-heading-primary;
+    }
+    letter-spacing: $letter-spacing-heading-primary;
+    line-height: $line-height-heading-primary;
+  }
+}
+
+.subheading {
+  font-size: $font-size-subheading;
+}
+
+// BUTTONS
+.btn {
+  border: none;
+  border-radius: 6px;
+  font: {
+    size: $font-size-btn;
+    weight: $font-weight-medium;
+  }
+  padding: 1.2rem 2.4rem;
+
+  &--full {
+    background-color: $brand-color;
+
+    &:link,
+    &:visited {
+      color: #fff;
+    }
+    &:hover,
+    &:active {
+      background-color: $background-color-btn-hover;
+    }
+  }
+
+  &--outline {
+    background-color: #fff;
+    border: 2px solid #fff;
+
+    &:link,
+    &:visited {
+      color: $font-color-btn--outline;
+    }
+    &:hover,
+    &:active {
+      background-color: transparent;
+    }
+  }
 }

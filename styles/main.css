@@ -26,11 +26,61 @@ a:visited {
   transition: all 0.3s;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  padding: 0 4.8rem;
+}
+
+.heading-primary {
+  color: #333;
+  font-size: 5.2rem;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+}
+
+.subheading {
+  font-size: 2.4rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 6px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.2rem 2.4rem;
+}
+
+.btn--full {
+  background-color: #0cd061;
+}
+
+.btn--full:link, .btn--full:visited {
+  color: #fff;
+}
+
+.btn--full:hover, .btn--full:active {
+  background-color: #0bbb57;
+}
+
+.btn--outline {
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn--outline:link, .btn--outline:visited {
+  color: #555;
+}
+
+.btn--outline:hover, .btn--outline:active {
+  background-color: transparent;
+}
+
 .main-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #e7faef;
+  background-color: #e6faee;
   color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,7 +111,7 @@ a:visited {
 }
 
 .main-header .logo:hover {
-  color: #0bbb57;
+  color: #0bbc58;
 }
 
 .main-nav-list {
@@ -81,6 +131,58 @@ a:visited {
 }
 
 .main-nav-link:hover, .main-nav-link:active {
-  color: #0bbb57;
+  color: #0bbc58;
+}
+
+.main-nav .nav-contact {
+  border-radius: 6px;
+  color: #fff;
+  background-color: #0ccf61;
+  padding: 1.2rem 2.4rem;
+}
+
+.main-nav .nav-contact:hover {
+  background-color: #0bbc58;
+}
+
+.hero {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6.4rem;
+  text-align: center;
+}
+
+.hero-section {
+  background-color: #e7faef;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  width: 40rem;
+}
+
+.hero div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40rem;
 }
 /*# sourceMappingURL=main.css.map */
