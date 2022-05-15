@@ -1,1 +1,68 @@
+// TYPOGRAPHY
+$font-size-header: 1.8rem;
+$font-size-logo: 2.2rem;
 
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+
+// COLORS
+$background-color-header: #e7faef;
+
+$font-color-header: #333;
+$font-color-header-hover: #0bbb57;
+
+.main {
+  &-header {
+    align-items: center;
+    background-color: $background-color-header;
+    color: $font-color-header;
+    display: flex;
+
+    font: {
+      size: $font-size-header;
+      weight: $font-weight-medium;
+    }
+
+    height: 8rem;
+    justify-content: space-between;
+    padding: 0 4.8rem;
+
+    .logo {
+      align-items: center;
+      color: $font-color-header;
+      display: flex;
+
+      font: {
+        size: $font-size-logo;
+        weight: $font-weight-semi-bold;
+      }
+
+      &-icon {
+        font-size: 3.2rem;
+      }
+    }
+    .logo:hover {
+      color: $font-color-header-hover;
+    }
+  }
+
+  &-nav {
+    &-list {
+      align-items: center;
+      display: flex;
+      gap: 4rem;
+      list-style: none;
+    }
+
+    &-link:link,
+    &-link:visited {
+      color: $font-color-header;
+      display: inline-block;
+    }
+
+    &-link:hover,
+    &-link:active {
+      color: $font-color-header-hover;
+    }
+  }
+}

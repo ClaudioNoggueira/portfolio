@@ -1,20 +1,36 @@
 $font-stack: "Rubik", sans-serif;
 
+$brand-color: #0cd061;
+
+$background-color-body: #fff;
+$font-color-body: #555;
+$font-color-link-hover: #0bbb57;
+$font-weight-default: 400;
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 html {
-  font: {
-    size: 62.5%;
-    family: $font-stack;
-  }
+  font-size: 62.5%;
+  overflow: hidden;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 120rem;
-  padding: 0 3.2rem;
+body {
+  background-color: $background-color-body;
+  color: $font-color-body;
+  font: {
+    family: $font-stack;
+    weight: $font-weight-default;
+  }
+  line-height: 1;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  transition: all 0.3s;
 }
