@@ -1,0 +1,41 @@
+.work {
+  & {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    gap: 2.4rem;
+    line-height: 1.5;
+  }
+
+  &-assignments {
+    text-align: justify;
+  }
+}
+
+.education {
+  & {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .course-details {
+    text-align: justify;
+  }
+}
+
+.certifications {
+  & {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .certification-details {
+    text-align: justify;
+  }
+}
