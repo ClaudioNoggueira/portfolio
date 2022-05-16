@@ -3,12 +3,11 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -17,13 +16,12 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1;
+  overflow-x: hidden;
 }
 
 a:link,
 a:visited {
   text-decoration: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
 }
 
 .container {
@@ -32,15 +30,40 @@ a:visited {
   padding: 0 4.8rem;
 }
 
-.heading-primary {
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -webkit-column-gap: 5.6rem;
+          column-gap: 5.6rem;
+}
+
+.grid--2-cols {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.heading {
   color: #333;
-  font-size: 5.2rem;
   letter-spacing: -0.5px;
   line-height: 1.05;
 }
 
+.heading-primary {
+  font-size: 5.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.6rem;
+  margin-bottom: 4.8rem;
+}
+
 .subheading {
   font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.center {
+  text-align: center;
 }
 
 .btn {
@@ -49,6 +72,10 @@ a:visited {
   font-size: 1.8rem;
   font-weight: 500;
   padding: 1.2rem 2.4rem;
+}
+
+.btn-icon {
+  font-size: 2.4rem;
 }
 
 .btn--full {
@@ -128,6 +155,8 @@ a:visited {
 .main-nav-link:link, .main-nav-link:visited {
   color: #333;
   display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .main-nav-link:hover, .main-nav-link:active {
@@ -166,6 +195,7 @@ a:visited {
 
 .hero-section {
   background-color: #e7faef;
+  margin-bottom: 9.6rem;
 }
 
 .hero-description {
@@ -184,5 +214,25 @@ a:visited {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 40rem;
+}
+
+.about-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.about div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=main.css.map */

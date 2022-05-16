@@ -62,6 +62,7 @@ $font-color-header: #333;
     &-link:visited {
       color: $font-color-header;
       display: inline-block;
+      transition: all 0.3s;
     }
 
     &-link:hover,
