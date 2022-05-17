@@ -1,0 +1,31 @@
+.skills {
+  & {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    justify-content: center;
+  }
+
+  .skill {
+    // border-radius: 9px;
+    // box-shadow: 0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.075);
+    padding: 2.4rem;
+    text-align: center;
+    transition: all 0.4s;
+
+    // &:hover {
+    //   box-shadow: 0 3.2rem 6.4rem 0 rgba(0, 0, 0, 0.06);
+    //   transform: translateY(-1rem);
+    // }
+
+    &-image {
+      height: 15rem;
+    }
+
+    &-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+  }
+}

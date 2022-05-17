@@ -386,4 +386,35 @@ strong {
 .certifications .certification-details strong {
   margin-right: 1rem;
 }
+
+.skills {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills .skill {
+  padding: 2.4rem;
+  text-align: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.skills .skill-image {
+  height: 15rem;
+}
+
+.skills .skill-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
 /*# sourceMappingURL=main.css.map */
