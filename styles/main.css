@@ -33,7 +33,7 @@ strong {
 }
 
 .container {
-  margin: 0 auto 9.6rem;
+  margin: 0 auto;
   max-width: 120rem;
   padding: 0 4.8rem;
 }
@@ -41,8 +41,6 @@ strong {
 .grid {
   display: -ms-grid;
   display: grid;
-  -webkit-column-gap: 6.4rem;
-          column-gap: 6.4rem;
 }
 
 .grid--2-cols {
@@ -55,8 +53,14 @@ strong {
       grid-template-columns: repeat(3, 1fr);
 }
 
-.heading {
+.grid--4-cols {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.heading-primary, .heading-secondary, .heading-tertiary {
   color: #333;
+  font-weight: 700;
   letter-spacing: -0.5px;
   line-height: 1.05;
 }
@@ -67,21 +71,56 @@ strong {
 
 .heading-secondary {
   font-size: 4.6rem;
-  margin-bottom: 4.8rem;
 }
 
 .heading-tertiary {
   font-size: 3.8rem;
-  margin-bottom: 2.4rem;
 }
 
 .subheading {
+  color: #0bbb57;
   font-size: 2.4rem;
-  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+
+.link:link,
+.link:visited {
+  border-bottom: 1px solid currentColor;
+  color: #0cd061;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.link:hover,
+.link:active {
+  border-bottom: 1px solid transparent;
+  color: #0bbb57;
 }
 
 .center {
   text-align: center;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1.2rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 2.4rem;
+}
+
+.margin-bottom-big {
+  margin-bottom: 4.8rem;
+}
+
+.margin-bottom-bigger {
+  margin-bottom: 6.4rem;
 }
 
 .btn {
@@ -255,7 +294,23 @@ strong {
           justify-content: center;
 }
 
+.qualification-icon {
+  color: #0bbb57;
+  border-radius: 50%;
+  background-color: #e7faef;
+  margin-bottom: 3.2rem;
+  padding: 1.2rem;
+}
+
 .work {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 3.6rem;
+}
+
+.work-details {
+  -ms-grid-column: 1;
+  grid-column: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,13 +318,21 @@ strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 1.6rem;
-  gap: 2.4rem;
-  line-height: 1.5;
+  gap: 0.8rem;
 }
 
 .work-assignments {
-  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-column: 2 / -1;
 }
 
 .education {
@@ -302,7 +365,25 @@ strong {
   gap: 2.4rem;
 }
 
-.certifications .certification-details {
-  text-align: justify;
+.certifications .certification-details .course,
+.certifications .certification-details .hours-conclusion,
+.certifications .certification-details .type-instructor {
+  margin-bottom: 0.6rem;
+}
+
+.certifications .certification-details div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.certifications .certification-details strong {
+  margin-right: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

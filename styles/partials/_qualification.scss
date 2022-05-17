@@ -1,14 +1,39 @@
+// COLORS
+$brand-color: #0cd061;
+
+$brand-color-shade-10: #0bbb57;
+
+$brand-color-tint-80: #cef6df;
+$brand-color-tint-90: #e7faef;
+
+.qualification {
+  &-icon {
+    color: $brand-color-shade-10;
+    border-radius: 50%;
+    background-color: $brand-color-tint-90;
+    margin-bottom: 3.2rem;
+    padding: 1.2rem;
+  }
+}
 .work {
   & {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 3.6rem;
+  }
+
+  &-details {
+    grid-column: 1;
     display: flex;
     flex-direction: column;
-    font-size: 1.6rem;
-    gap: 2.4rem;
-    line-height: 1.5;
+    gap: 0.8rem;
   }
 
   &-assignments {
-    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 2 / -1;
   }
 }
 
@@ -36,6 +61,19 @@
   }
 
   .certification-details {
-    text-align: justify;
+    .course,
+    .hours-conclusion,
+    .type-instructor {
+      margin-bottom: 0.6rem;
+    }
+    div {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    strong {
+      margin-right: 1rem;
+    }
   }
 }

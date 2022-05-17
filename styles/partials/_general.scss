@@ -1,19 +1,14 @@
 // TYPOGRAPHY
 $font-stack: "Rubik", sans-serif;
 
-$font-weight-default: 400;
-$font-weight-medium: 500;
-$font-weight-semi-bold: 600;
-$font-weight-bold: 700;
-
 // COLORS
 $brand-color: #0cd061;
 
-$background-color-body: #fff;
-$background-color-btn-hover: #0bbb57;
+$brand-color-shade-10: #0bbb57;
+
+$white-color: #fff;
 
 $font-color-body: #555;
-$font-color-link-hover: #0bbb57;
 $font-color-headings: #333;
 $font-color-btn--outline: #555;
 
@@ -29,11 +24,11 @@ html {
 }
 
 body {
-  background-color: $background-color-body;
+  background-color: $white-color;
   color: $font-color-body;
   font: {
     family: $font-stack;
-    weight: $font-weight-default;
+    weight: 400;
   }
   line-height: 1;
   overflow-x: hidden;
@@ -53,14 +48,13 @@ strong {
 }
 
 .container {
-  margin: 0 auto 9.6rem;
+  margin: 0 auto;
   max-width: 120rem;
   padding: 0 4.8rem;
 }
 
 .grid {
   display: grid;
-  column-gap: 6.4rem;
 
   &--2-cols {
     grid-template-columns: 1fr 1fr;
@@ -69,12 +63,19 @@ strong {
   &--3-cols {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  &--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 // HEADINGS
 .heading {
-  & {
+  &-primary,
+  &-secondary,
+  &-tertiary {
     color: $font-color-headings;
+    font-weight: 700;
     letter-spacing: -0.5px;
     line-height: 1.05;
   }
@@ -89,24 +90,57 @@ strong {
     font: {
       size: 4.6rem;
     }
-    margin-bottom: 4.8rem;
   }
 
   &-tertiary {
     font: {
       size: 3.8rem;
     }
-    margin-bottom: 2.4rem;
   }
 }
 
 .subheading {
+  color: $brand-color-shade-10;
   font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.link:link,
+.link:visited {
+  border-bottom: 1px solid currentColor;
+  color: $brand-color;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  width: fit-content;
+}
+
+.link:hover,
+.link:active {
+  border-bottom: 1px solid transparent;
+  color: $brand-color-shade-10;
+}
+
+// UTILS
+.center {
+  text-align: center;
+}
+
+.margin-bottom-small {
   margin-bottom: 1.2rem;
 }
 
-.center {
-  text-align: center;
+.margin-bottom-medium {
+  margin-bottom: 2.4rem;
+}
+
+.margin-bottom-big {
+  margin-bottom: 4.8rem;
+}
+
+.margin-bottom-bigger {
+  margin-bottom: 6.4rem;
 }
 
 // BUTTONS
@@ -115,7 +149,7 @@ strong {
   border-radius: 6px;
   font: {
     size: 1.8rem;
-    weight: $font-weight-medium;
+    weight: 500;
   }
   padding: 1.2rem 2.4rem;
 
@@ -132,7 +166,7 @@ strong {
     }
     &:hover,
     &:active {
-      background-color: $background-color-btn-hover;
+      background-color: $brand-color-shade-10;
     }
   }
 
