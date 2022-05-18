@@ -129,6 +129,8 @@ strong {
   font-size: 1.8rem;
   font-weight: 500;
   padding: 1.2rem 2.4rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-icon {
@@ -359,7 +361,7 @@ strong {
 .certifications {
   font-size: 1.6rem;
   line-height: 1.5;
-  gap: 3.6rem;
+  gap: 4.8rem;
 }
 
 .certifications .certification-details div {
@@ -399,5 +401,94 @@ strong {
 .skills .skill-title {
   font-size: 1.8rem;
   font-weight: 600;
+}
+
+.projects {
+  -webkit-column-gap: 4.8rem;
+          column-gap: 4.8rem;
+  padding: 6.4rem 0;
+}
+
+.projects-section {
+  background-color: #e7faef;
+}
+
+.project-image {
+  display: block;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 100%;
+}
+
+.project-image:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.project-image-container {
+  overflow: hidden;
+}
+
+.project-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+
+.project-text-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+.project-title {
+  color: #333;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.project-description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.project-technologies-used {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.2rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  list-style: none;
+  margin-bottom: 2.4rem;
+}
+
+.project-technologies-used li {
+  border: 1px solid #0cd061;
+  background-color: #cef6df;
+  border-radius: 7px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 0.8rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.project-technologies-used li:hover {
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
 }
 /*# sourceMappingURL=main.css.map */

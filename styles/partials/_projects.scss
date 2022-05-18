@@ -1,0 +1,85 @@
+// COLORS
+$brand-color: #0cd061;
+
+$brand-color-shade-10: #0bbb57;
+
+$brand-color-tint-80: #cef6df;
+$brand-color-tint-90: #e7faef;
+
+$color-project-title: #333;
+
+.projects {
+  & {
+    column-gap: 4.8rem;
+    padding: 6.4rem 0;
+  }
+
+  &-section {
+    background-color: $brand-color-tint-90;
+  }
+}
+
+.project {
+  &-image {
+    display: block;
+    transition: all 0.4s;
+    width: 100%;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+
+    &-container {
+      overflow: hidden;
+    }
+  }
+
+  &-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    div {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  &-title {
+    color: #333;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &-description {
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+
+  &-technologies-used {
+    & {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: start;
+      list-style: none;
+      margin-bottom: 2.4rem;
+    }
+
+    li {
+      border: 1px solid $brand-color;
+      background-color: $brand-color-tint-80;
+      border-radius: 7px;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 1.5;
+      padding: 0.8rem;
+      transition: all 0.4s;
+    }
+
+    li:hover {
+      transform: translateY(-0.2rem);
+    }
+  }
+}
