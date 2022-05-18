@@ -41,6 +41,8 @@ $font-color-header: #333;
         weight: $font-weight-semi-bold;
       }
 
+      transition: all 0.3s;
+
       &-icon {
         font-size: 3.2rem;
       }
@@ -67,6 +69,7 @@ $font-color-header: #333;
 
     &-link:hover,
     &-link:active {
+      transition: all 0.3s;
       color: $font-color-main-nav-link-hover;
     }
 
