@@ -300,8 +300,13 @@ strong {
   color: #0bbb57;
   border-radius: 50%;
   background-color: #e7faef;
-  margin-bottom: 3.2rem;
+  display: inline-block;
+  font-size: 3.6rem;
+  margin: 0.8rem auto;
   padding: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .work {
@@ -354,6 +359,10 @@ strong {
   margin-bottom: 0.6rem;
 }
 
+.education div i {
+  line-height: 1;
+}
+
 .education strong {
   margin-right: 1rem;
 }
@@ -366,6 +375,10 @@ strong {
 
 .certifications .certification-details div {
   margin-bottom: 0.6rem;
+}
+
+.certifications .certification-details div i {
+  line-height: 1;
 }
 
 .certifications .certification-details strong {

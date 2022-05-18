@@ -11,8 +11,11 @@ $brand-color-tint-90: #e7faef;
     color: $brand-color-shade-10;
     border-radius: 50%;
     background-color: $brand-color-tint-90;
-    margin-bottom: 3.2rem;
+    display: inline-block;
+    font-size: 3.6rem;
+    margin: 0.8rem auto;
     padding: 1.2rem;
+    align-self: center;
   }
 }
 .work {
@@ -51,6 +54,10 @@ $brand-color-tint-90: #e7faef;
 
   div {
     margin-bottom: 0.6rem;
+
+    i {
+      line-height: 1;
+    }
   }
 
   strong {
@@ -68,6 +75,10 @@ $brand-color-tint-90: #e7faef;
   .certification-details {
     div {
       margin-bottom: 0.6rem;
+
+      i {
+        line-height: 1;
+      }
     }
 
     strong {
