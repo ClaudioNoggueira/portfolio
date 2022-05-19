@@ -1,0 +1,122 @@
+.contact {
+  &--grid {
+    grid-template-columns: 4fr 6fr;
+    column-gap: 4.8rem;
+  }
+
+  &-container {
+    padding: 0 4.8rem;
+  }
+
+  &-icon {
+    color: $brand-color-shade-10;
+    border-radius: 50%;
+    background-color: $brand-color-tint-90;
+    display: inline-block;
+    font-size: 3.6rem;
+    padding: 1.2rem;
+    margin: 0.8rem;
+  }
+
+  &-info {
+    align-items: center;
+    display: flex;
+    gap: 2.4rem;
+    margin-bottom: 3.6rem;
+
+    div {
+      line-height: 1.5;
+
+      span {
+        font: {
+          size: 1.8rem;
+          weight: 600;
+        }
+        margin-bottom: 1.2rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &-form {
+    align-items: center;
+    background: rgb(12, 208, 97);
+    background: linear-gradient(
+      163deg,
+      rgba(12, 208, 97, 1) 0%,
+      rgba(61, 217, 129, 1) 100%
+    );
+    border-radius: 15px;
+    box-shadow: 0 1.2rem 2.4rem 0 rgba($color: #000000, $alpha: 0.45);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    line-height: 1.5;
+    padding: 2.4rem 6.4rem;
+
+    div {
+      text-align: center;
+      width: 100%;
+
+      label {
+        display: inline-block;
+        font: {
+          size: 2rem;
+          weight: 600;
+        }
+        margin-bottom: 0.8rem;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        line-height: 3;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        text-align: center;
+        font-family: inherit;
+        font-size: 1.6rem;
+        background-color: #e7faef;
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      textarea {
+        padding: 2.4rem;
+        margin-bottom: 2rem;
+      }
+    }
+
+    button {
+      background-color: #e7faef;
+      border: none;
+      border-radius: 8px;
+      color: $brand-color;
+      font: {
+        family: inherit;
+        size: 2rem;
+        weight: 600;
+      }
+      padding: 1.2rem 2.4rem;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px #fff;
+      color: #fff;
+    }
+
+    *:focus {
+      outline: none;
+      box-shadow: inset 0 0 0 3px #9ad4b3;
+    }
+  }
+}

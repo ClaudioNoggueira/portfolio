@@ -323,6 +323,11 @@ strong {
   margin-bottom: 3.6rem;
 }
 
+.work--grid {
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+}
+
 .work strong {
   margin-right: 1rem;
 }
@@ -509,5 +514,133 @@ strong {
 .project-technologies-used li:hover {
   -webkit-transform: translateY(-0.2rem);
           transform: translateY(-0.2rem);
+}
+
+.contact--grid {
+  -ms-grid-columns: 4fr 6fr;
+      grid-template-columns: 4fr 6fr;
+  -webkit-column-gap: 4.8rem;
+          column-gap: 4.8rem;
+}
+
+.contact-container {
+  padding: 0 4.8rem;
+}
+
+.contact-icon {
+  color: #0bbb57;
+  border-radius: 50%;
+  background-color: #e7faef;
+  display: inline-block;
+  font-size: 3.6rem;
+  padding: 1.2rem;
+  margin: 0.8rem;
+}
+
+.contact-info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.4rem;
+  margin-bottom: 3.6rem;
+}
+
+.contact-info div {
+  line-height: 1.5;
+}
+
+.contact-info div span {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.contact-info div p {
+  font-size: 1.6rem;
+}
+
+.contact-form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0cd061;
+  background: linear-gradient(163deg, #0cd061 0%, #3dd981 100%);
+  border-radius: 15px;
+  -webkit-box-shadow: 0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.45);
+          box-shadow: 0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.45);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+  line-height: 1.5;
+  padding: 2.4rem 6.4rem;
+}
+
+.contact-form div {
+  text-align: center;
+  width: 100%;
+}
+
+.contact-form div label {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.contact-form div input[type="text"],
+.contact-form div input[type="email"] {
+  line-height: 3;
+}
+
+.contact-form div input[type="text"],
+.contact-form div input[type="email"],
+.contact-form div textarea {
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.6rem;
+  background-color: #e7faef;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.contact-form div textarea {
+  padding: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form button {
+  background-color: #e7faef;
+  border: none;
+  border-radius: 8px;
+  color: #0cd061;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.2rem 2.4rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: transparent;
+  -webkit-box-shadow: inset 0 0 0 2px #fff;
+          box-shadow: inset 0 0 0 2px #fff;
+  color: #fff;
+}
+
+.contact-form *:focus {
+  outline: none;
+  -webkit-box-shadow: inset 0 0 0 3px #9ad4b3;
+          box-shadow: inset 0 0 0 3px #9ad4b3;
 }
 /*# sourceMappingURL=main.css.map */
