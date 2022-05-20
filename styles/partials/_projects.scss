@@ -1,10 +1,11 @@
 // COLORS
 $brand-color: #0cd061;
+$hue-color: 146;
 
-$brand-color-shade-10: #0bbb57;
+$brand-color-shade-10: hsl($hue-color, 89%, 39%);
 
-$brand-color-tint-80: #cef6df;
-$brand-color-tint-90: #e7faef;
+$brand-color-tint-80: hsl($hue-color, 69%, 89%);
+$brand-color-tint-90: hsl($hue-color, 66%, 94%);
 
 $color-project-title: #333;
 

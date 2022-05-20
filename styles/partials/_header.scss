@@ -1,55 +1,29 @@
-// TYPOGRAPHY
-$font-size-header: 1.8rem;
-$font-size-logo: 2.2rem;
-
-$font-weight-medium: 500;
-$font-weight-semi-bold: 600;
-
 // COLORS
-$brand-color: hsl(146, 89%, 43%); //#0cd061
-$brand-hue-color: 146;
 
-$background-color-header: hsl($brand-hue-color, 66%, 94%);
-$background-color-nav-contact-hover: hsl($brand-hue-color, 89%, 39%);
+$brand-color: #0cd061;
+$hue-color: 146;
 
-$font-color-main-nav-link-hover: hsl($brand-hue-color, 89%, 39%);
-$font-color-header: #333;
+$brand-color-tint-90: hsl($hue-color, 66%, 94%);
+
+$brand-color-shade-10: hsl($hue-color, 89%, 39%);
+
+$gray-color-darker: #333;
 
 .main {
   &-header {
     align-items: center;
-    background-color: $background-color-header;
-    color: $font-color-header;
+    background-color: $brand-color-tint-90;
+    color: $gray-color-darker;
     display: flex;
 
     font: {
-      size: $font-size-header;
-      weight: $font-weight-medium;
+      size: 1.8rem;
+      weight: 500;
     }
 
     height: 8rem;
     justify-content: space-between;
     padding: 0 4.8rem;
-
-    .logo {
-      align-items: center;
-      color: $font-color-header;
-      display: flex;
-
-      font: {
-        size: $font-size-logo;
-        weight: $font-weight-semi-bold;
-      }
-
-      transition: all 0.3s;
-
-      &-icon {
-        font-size: 3.2rem;
-      }
-    }
-    .logo:hover {
-      color: $font-color-main-nav-link-hover;
-    }
   }
 
   &-nav {
@@ -62,7 +36,7 @@ $font-color-header: #333;
 
     &-link:link,
     &-link:visited {
-      color: $font-color-header;
+      color: $gray-color-darker;
       display: inline-block;
       transition: all 0.3s;
     }
@@ -70,7 +44,7 @@ $font-color-header: #333;
     &-link:hover,
     &-link:active {
       transition: all 0.3s;
-      color: $font-color-main-nav-link-hover;
+      color: $brand-color-shade-10;
     }
 
     .nav-contact {
@@ -81,7 +55,7 @@ $font-color-header: #333;
     }
 
     .nav-contact:hover {
-      background-color: $background-color-nav-contact-hover;
+      background-color: $brand-color-shade-10;
     }
   }
 }

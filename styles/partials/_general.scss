@@ -2,15 +2,14 @@
 $font-stack: "Rubik", sans-serif;
 
 // COLORS
-$brand-color: #0cd061;
+$brand-color: #0ccf61;
+$hue-color: 146;
 
-$brand-color-shade-10: #0bbb57;
+$brand-color-shade-10: hsl($hue-color, 89%, 39%);
 
-$white-color: #fff;
-
-$font-color-body: #555;
-$font-color-headings: #333;
-$font-color-btn--outline: #555;
+$gray-light-color: #777;
+$gray-color: #555;
+$gray-darker-color: #333;
 
 * {
   box-sizing: border-box;
@@ -25,8 +24,8 @@ html {
 }
 
 body {
-  background-color: $white-color;
-  color: $font-color-body;
+  background-color: #fff;
+  color: $gray-color;
   font: {
     family: $font-stack;
     weight: 400;
@@ -46,6 +45,30 @@ a:visited {
 
 strong {
   font-weight: 500;
+}
+
+footer {
+  border-top: 1px solid #eee;
+}
+
+.logo {
+  align-items: center;
+  color: $gray-darker-color;
+  display: flex;
+
+  font: {
+    size: 2.2rem;
+    weight: 600;
+  }
+
+  transition: all 0.3s;
+
+  &-icon {
+    font-size: 3.2rem;
+  }
+}
+.logo:hover {
+  color: $brand-color-shade-10;
 }
 
 .container {
@@ -75,7 +98,7 @@ strong {
   &-primary,
   &-secondary,
   &-tertiary {
-    color: $font-color-headings;
+    color: $gray-darker-color;
     font-weight: 700;
     letter-spacing: -0.5px;
     line-height: 1.05;
@@ -178,7 +201,7 @@ strong {
 
     &:link,
     &:visited {
-      color: $font-color-btn--outline;
+      color: $gray-darker-color;
     }
     &:hover,
     &:active {

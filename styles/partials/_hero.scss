@@ -1,10 +1,8 @@
-// TYPOGRAPHY
-$font-size-hero-description: 1.8rem;
-
-$line-height-hero-description: 1.5;
-
 // COLORS
-$background-color-hero: #e7faef;
+$brand-color: #0cd061;
+$hue-color: 146;
+
+$brand-color-tint-90: hsl($hue-color, 66%, 94%);
 
 .hero {
   & {
@@ -18,12 +16,12 @@ $background-color-hero: #e7faef;
   }
 
   &-section {
-    background-color: $background-color-hero;
+    background-color: $brand-color-tint-90;
   }
 
   &-description {
-    font-size: $font-size-hero-description;
-    line-height: $line-height-hero-description;
+    font-size: 1.8rem;
+    line-height: 1.5;
     width: 40rem;
   }
 
