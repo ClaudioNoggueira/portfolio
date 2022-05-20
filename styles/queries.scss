@@ -1,5 +1,6 @@
 $desktop-smaller: 84em;
 $landscape-tablets: 75em;
+$portrait-tablets: 59em;
 
 // BELOW 1344px
 @media (max-width: $desktop-smaller) {
@@ -37,5 +38,76 @@ $landscape-tablets: 75em;
 
   .hero {
     gap: 4.8rem;
+  }
+}
+
+@media (max-width: $portrait-tablets) {
+  html {
+    // 8px / 16px
+    font-size: 50%;
+  }
+
+  .hero {
+    & {
+      gap: 6.4rem;
+      padding: 0 8rem;
+    }
+  }
+
+  // MOBILE NAVIGATION
+  .mobile-nav {
+    &-button {
+      display: block;
+    }
+  }
+
+  .main-nav {
+    & {
+      align-items: center;
+      background-color: #fff;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      transform: translateX(100%);
+      transition: all 0.5s ease-in;
+      width: 100%;
+
+      // HIDE NAVIGATION
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+    }
+
+    &-list {
+      flex-direction: column;
+      gap: 4.8rem;
+    }
+
+    &-link:link,
+    &-link:visited {
+      font-size: 3rem;
+    }
+  }
+
+  .nav-open {
+    & .main-nav {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    & .mobile-nav-icon[name="uil-close"] {
+      display: block;
+    }
+
+    & .mobile-nav-icon[name="uil-menu"] {
+      display: none;
+    }
   }
 }

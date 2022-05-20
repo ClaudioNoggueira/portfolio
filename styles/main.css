@@ -205,6 +205,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .main-nav-list {
@@ -240,6 +241,24 @@ footer {
 
 .main-nav .nav-contact:hover {
   background-color: #0bbc58;
+}
+
+.mobile-nav-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon {
+  color: #333;
+  font-size: 4.8rem;
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.mobile-nav-icon[name="uil-multiply"] {
+  display: none;
 }
 
 .hero {
