@@ -1,3 +1,8 @@
+$brand-color: #0ccf61;
+$hue-color: 146;
+
+$brand-color-shade-10: hsl($hue-color, 89%, 39%);
+
 .footer {
   & {
     column-gap: 4.8rem;
@@ -9,7 +14,7 @@
   }
 
   .logo-subheading {
-    color: #0bbb57;
+    color: $brand-color;
     font-size: 1.8rem;
     font-weight: 600;
   }
@@ -20,16 +25,21 @@
   }
 
   .column-socials {
-    justify-content: start;
+    // align-items: center;
+    justify-content: center;
     display: flex;
     gap: 2.4rem;
-    justify-items: center;
     flex-wrap: wrap;
     // flex-direction: column;
 
-    .social-image {
-      height: 4.8rem;
-      color: #0bbb57;
+    .social-icon {
+      font-size: 4.8rem;
+      color: $brand-color;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $brand-color-shade-10;
+      }
     }
   }
 
@@ -37,7 +47,7 @@
     &-list {
       align-items: flex-start;
       display: flex;
-      // flex-direction: column;
+      flex-direction: column;
       flex-wrap: wrap;
       gap: 2.4rem;
       list-style: none;
