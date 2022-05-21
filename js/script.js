@@ -29,3 +29,7 @@ links.forEach((link) => {
     }
   });
 });
+
+// COPYRIGHT YEAR
+let yearEl = document.querySelector(".year");
+yearEl.textContent = new Date().getFullYear();
