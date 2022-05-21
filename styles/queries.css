@@ -82,6 +82,9 @@
             flex-direction: column;
     gap: 4.8rem;
   }
+  .main-nav-list li:first-child {
+    display: none;
+  }
   .main-nav-link:link, .main-nav-link:visited {
     font-size: 3rem;
   }
@@ -92,10 +95,10 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  .nav-open .mobile-nav-icon[name="uil-close"] {
+  .nav-open .mobile-nav-icon[name="close-icon"] {
     display: block;
   }
-  .nav-open .mobile-nav-icon[name="uil-menu"] {
+  .nav-open .mobile-nav-icon[name="menu-icon"] {
     display: none;
   }
 }

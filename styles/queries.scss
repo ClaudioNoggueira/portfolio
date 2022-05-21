@@ -110,6 +110,10 @@ $phones: 34em;
     &-list {
       flex-direction: column;
       gap: 4.8rem;
+
+      & li:first-child {
+        display: none;
+      }
     }
 
     &-link:link,
@@ -126,11 +130,11 @@ $phones: 34em;
       transform: translateX(0);
     }
 
-    & .mobile-nav-icon[name="uil-close"] {
+    & .mobile-nav-icon[name="close-icon"] {
       display: block;
     }
 
-    & .mobile-nav-icon[name="uil-menu"] {
+    & .mobile-nav-icon[name="menu-icon"] {
       display: none;
     }
   }
