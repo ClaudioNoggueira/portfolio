@@ -131,4 +131,87 @@
     gap: 0.8rem;
   }
 }
+
+@media (max-width: 34em) {
+  .grid--2-cols, .grid--3-cols, .grid--4-cols {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .btn, .btn:link, .btn:visited {
+    padding: 2rem;
+  }
+  .about-text-container {
+    text-align: center;
+  }
+  .about div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.4rem;
+  }
+  .work--grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .work-details {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .work-assignments {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .education {
+    text-align: center;
+  }
+  .education .course-details {
+    margin-bottom: 4.8rem;
+  }
+  .certifications {
+    text-align: center;
+  }
+  .projects {
+    padding: 0;
+  }
+  .projects-section {
+    padding-bottom: 0;
+  }
+  .project-text-container {
+    margin-bottom: 8rem;
+  }
+  .project-text-container div {
+    gap: 6.4rem;
+  }
+  .project-technologies-used {
+    margin-bottom: 0;
+  }
+  .project-image-container {
+    -webkit-transform: translateY(-2.4rem);
+            transform: translateY(-2.4rem);
+  }
+  .project-image-container:nth-child(2) {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .contact--grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .contact-info:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+  .contact-form {
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
 /*# sourceMappingURL=queries.css.map */
