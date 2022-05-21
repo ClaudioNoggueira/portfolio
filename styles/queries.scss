@@ -1,7 +1,9 @@
 $desktop-smaller: 84em;
-$landscape-tablets: 75em;
-$portrait-tablets: 59em;
+$tablets-landscape: 75em;
+$tablets-portrait: 59em;
+$tablets-smaller: 44em;
 
+// *****************************************************************
 // BELOW 1344px
 @media (max-width: $desktop-smaller) {
   .heading {
@@ -11,8 +13,9 @@ $portrait-tablets: 59em;
   }
 }
 
+// *****************************************************************
 // BELOW 1200px
-@media (max-width: $landscape-tablets) {
+@media (max-width: $tablets-landscape) {
   html {
     // 9px / 16px
     font-size: 56.25%;
@@ -40,8 +43,9 @@ $portrait-tablets: 59em;
     gap: 4.8rem;
   }
 }
-
-@media (max-width: $portrait-tablets) {
+// *****************************************************************
+// BELOW 944px
+@media (max-width: $tablets-portrait) {
   html {
     // 8px / 16px
     font-size: 50%;
@@ -51,6 +55,25 @@ $portrait-tablets: 59em;
     & {
       gap: 6.4rem;
       padding: 0 8rem;
+    }
+  }
+
+  .contact {
+    &--grid {
+      column-gap: 3.6rem;
+      grid-template-columns: 3fr 7fr;
+    }
+
+    &-container {
+      padding: 0;
+    }
+
+    &-info {
+      gap: 1.2rem;
+    }
+
+    &-form {
+      padding: 2.4rem 4.8rem;
     }
   }
 
@@ -108,6 +131,48 @@ $portrait-tablets: 59em;
 
     & .mobile-nav-icon[name="uil-menu"] {
       display: none;
+    }
+  }
+}
+// *****************************************************************
+// BELOW 704px
+@media (max-width: $tablets-smaller) {
+  .grid {
+    &--3-cols,
+    &--4-cols {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .about {
+    &-text {
+      padding: 0;
+    }
+    div {
+      padding: 0 8rem;
+      gap: 0;
+      justify-content: space-between;
+    }
+  }
+
+  .work {
+    &-details {
+      gap: 1.6rem;
+    }
+
+    &--grid {
+      gap: 2.4rem;
+      grid-template-columns: 2fr 3fr;
+    }
+  }
+
+  .contact {
+    &--grid {
+      grid-template-columns: 3fr 7fr;
+    }
+
+    &-info {
+      gap: 0.8rem;
     }
   }
 }
