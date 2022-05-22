@@ -86,7 +86,7 @@
     display: none;
   }
   .main-nav-link:link, .main-nav-link:visited {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
   .nav-open .main-nav {
     opacity: 1;
@@ -141,7 +141,7 @@
         grid-template-columns: 1fr;
   }
   .btn, .btn:link, .btn:visited {
-    padding: 2rem;
+    padding: 1.6rem 2.4rem;
   }
   .about-text-container {
     text-align: center;
@@ -152,6 +152,10 @@
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 2.4rem;
+  }
+  .about div .btn {
+    text-align: center;
+    width: 100%;
   }
   .work--grid {
     -ms-grid-columns: 1fr;
@@ -189,10 +193,22 @@
     padding-bottom: 0;
   }
   .project-text-container {
+    border-bottom: 1px solid #eee;
     margin-bottom: 8rem;
   }
   .project-text-container div {
-    gap: 6.4rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 2.4rem;
+    text-align: center;
+  }
+  .project-text-container div .btn--outline {
+    border: 1px solid #333;
+  }
+  .project-title {
+    text-align: center;
   }
   .project-technologies-used {
     margin-bottom: 0;
