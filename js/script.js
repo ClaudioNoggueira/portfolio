@@ -1,18 +1,18 @@
 // MOBILE NAV BUTTON CLICK EVENT
-let mobileButtonEl = document.querySelector(".mobile-nav-button");
+const mobileButtonEl = document.querySelector(".mobile-nav-button");
 
 mobileButtonEl.addEventListener("click", () => {
-  let headerEl = document.querySelector("header");
+  const headerEl = document.querySelector("header");
   headerEl.classList.toggle("nav-open");
 });
 
 // SMOOTH SCROLLING ANIMATION
-let links = document.querySelectorAll("a:link");
+const links = document.querySelectorAll("a:link");
 
 links.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
-    let href = link.getAttribute("href");
+    const href = link.getAttribute("href");
 
     if (href === "#") {
       window.scrollTo({
@@ -22,7 +22,7 @@ links.forEach((link) => {
     }
 
     if (href !== "#" && href.startsWith("#")) {
-      let sectionEl = document.querySelector(href);
+      const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
       if (link.classList.contains("main-nav-link"))
         document.querySelector("header").classList.remove("nav-open");
@@ -31,5 +31,24 @@ links.forEach((link) => {
 });
 
 // COPYRIGHT YEAR
-let yearEl = document.querySelector(".year");
+const yearEl = document.querySelector(".year");
 yearEl.textContent = new Date().getFullYear();
+
+// STICKY NAVIGATION BAR
+const heroSectionEl = document.querySelector(".hero-section");
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    const entry = entries[0];
+    !entry.isIntersecting
+      ? document.body.classList.add("sticky")
+      : document.body.classList.remove("sticky");
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+
+observer.observe(heroSectionEl);
