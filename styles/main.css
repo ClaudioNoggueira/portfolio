@@ -90,6 +90,12 @@ footer {
       grid-template-columns: repeat(4, 1fr);
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .heading-primary, .heading-secondary, .heading-tertiary {
   color: #333;
   font-weight: 700;
@@ -200,9 +206,6 @@ footer {
           align-items: center;
   background-color: #e6faee;
   color: #333;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 1.8rem;
   font-weight: 500;
   height: 8rem;
@@ -217,9 +220,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 4rem;
   list-style: none;
 }
@@ -287,9 +287,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -313,9 +310,6 @@ footer {
 }
 
 .hero div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -338,9 +332,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 8rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -380,9 +371,6 @@ footer {
 .work-details {
   -ms-grid-column: 1;
   grid-column: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -391,9 +379,6 @@ footer {
 }
 
 .work-assignments {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -445,9 +430,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 2.4rem;
@@ -499,9 +481,6 @@ footer {
 }
 
 .project-text-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -510,9 +489,6 @@ footer {
 }
 
 .project-text-container div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 2rem;
 }
 
@@ -531,9 +507,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1.2rem;
@@ -586,9 +559,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 2.4rem;
   margin-bottom: 3.6rem;
 }
@@ -617,9 +587,6 @@ footer {
   -webkit-box-shadow: 0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.45);
           box-shadow: 0 1.2rem 2.4rem 0 rgba(0, 0, 0, 0.45);
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -649,12 +616,12 @@ footer {
 .contact-form div input[type="text"],
 .contact-form div input[type="email"],
 .contact-form div textarea {
-  text-align: center;
-  font-family: inherit;
-  font-size: 1.6rem;
   background-color: #e7faef;
   border: none;
   border-radius: 10px;
+  font-family: inherit;
+  font-size: 1.6rem;
+  text-align: center;
   width: 100%;
 }
 
@@ -715,9 +682,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 2.4rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -738,9 +702,6 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

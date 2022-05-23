@@ -27,7 +27,6 @@ $brand-color-shade-10: hsl($hue-color, 89%, 39%);
   .footer-socials {
     // align-items: center;
     justify-content: center;
-    display: flex;
     gap: 2.4rem;
     flex-wrap: wrap;
     // flex-direction: column;
@@ -46,7 +45,6 @@ $brand-color-shade-10: hsl($hue-color, 89%, 39%);
   &-nav {
     &-list {
       align-items: flex-start;
-      display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       gap: 2.4rem;

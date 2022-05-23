@@ -37,13 +37,11 @@ $brand-color-tint-90: hsl($hue-color, 66%, 94%);
 
   &-details {
     grid-column: 1;
-    display: flex;
     flex-direction: column;
     gap: 0.8rem;
   }
 
   &-assignments {
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
     grid-column: 2 / -1;

@@ -36,12 +36,10 @@ $color-project-title: #333;
   }
 
   &-text-container {
-    display: flex;
     flex-direction: column;
     gap: 2.4rem;
 
     div {
-      display: flex;
       gap: 2rem;
     }
   }
@@ -60,7 +58,6 @@ $color-project-title: #333;
   &-technologies-used {
     & {
       align-items: center;
-      display: flex;
       flex-wrap: wrap;
       gap: 1.2rem;
       justify-content: start;

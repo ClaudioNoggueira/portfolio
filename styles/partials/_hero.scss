@@ -7,7 +7,6 @@ $brand-color-tint-90: hsl($hue-color, 66%, 94%);
 .hero {
   & {
     align-items: center;
-    display: flex;
     flex-direction: column;
     gap: 3.2rem;
     justify-content: center;
@@ -26,7 +25,6 @@ $brand-color-tint-90: hsl($hue-color, 66%, 94%);
   }
 
   div {
-    display: flex;
     align-items: center;
     justify-content: space-around;
     width: 40rem;
