@@ -52,10 +52,16 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(heroSectionEl);
-
+("");
 // OPEN RESUMES
 const portugueseCV = document.getElementById("portugueseCV");
 
 portugueseCV.addEventListener("click", () => {
   window.open("ClaudioViniciusNogueira-PortugueseCV.pdf");
+});
+
+const englishCV = document.getElementById("englishCV");
+
+englishCV.addEventListener("click", () => {
+  window.open("ClaudioViniciusNogueira-EnglishCV.pdf");
 });
