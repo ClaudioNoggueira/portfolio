@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+*:focus {
+  -webkit-box-shadow: 0 0 0 3px #0bbc58;
+          box-shadow: 0 0 0 3px #0bbc58;
+  outline: none;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -705,7 +711,7 @@ footer {
   line-height: 1.5;
 }
 
-.footer .column-socials {
+.footer .footer-socials {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -717,14 +723,14 @@ footer {
       flex-wrap: wrap;
 }
 
-.footer .column-socials .social-icon {
+.footer .footer-socials .social-icon {
   font-size: 4.8rem;
   color: #0ccf61;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
-.footer .column-socials .social-icon:hover {
+.footer .footer-socials .social-icon:hover {
   color: #0bbc58;
 }
 
