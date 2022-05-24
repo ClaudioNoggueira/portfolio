@@ -33,6 +33,9 @@
     gap: 6.4rem;
     padding: 0 8rem;
   }
+  .about-text {
+    padding: 0;
+  }
   .contact--grid {
     -webkit-column-gap: 3.6rem;
             column-gap: 3.6rem;
@@ -112,11 +115,10 @@
     padding: 0;
   }
   .about div {
-    padding: 0 8rem;
-    gap: 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    gap: 6.4rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .work-details {
     gap: 1.6rem;
