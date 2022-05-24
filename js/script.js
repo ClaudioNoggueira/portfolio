@@ -11,7 +11,6 @@ const links = document.querySelectorAll("a:link");
 
 links.forEach((link) => {
   link.addEventListener("click", (event) => {
-    event.preventDefault();
     const href = link.getAttribute("href");
 
     if (href === "#") {
@@ -52,7 +51,7 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(heroSectionEl);
-("");
+
 // OPEN RESUMES
 const portugueseCV = document.getElementById("portugueseCV");
 
