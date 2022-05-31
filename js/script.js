@@ -29,6 +29,10 @@ links.forEach((link) => {
   });
 });
 
+// MY AGE
+const myAgeEl = document.querySelector(".myAge");
+myAgeEl.textContent = new Date().getFullYear() - 1999;
+
 // COPYRIGHT YEAR
 const yearEl = document.querySelector(".year");
 yearEl.textContent = new Date().getFullYear();
@@ -53,18 +57,14 @@ const observer = new IntersectionObserver(
 observer.observe(heroSectionEl);
 
 // OPEN RESUMES
-const portugueseCV = document.getElementById("portugueseCV");
+// const portugueseCV = document.getElementById("portugueseCV");
 
-portugueseCV.addEventListener("click", () => {
-  window.open("ClaudioViniciusNogueira-PortugueseCV.pdf");
-});
+// portugueseCV.addEventListener("click", () => {
+//   window.open("ClaudioViniciusNogueira-PortugueseCV.pdf");
+// });
 
-const englishCV = document.getElementById("englishCV");
+// const englishCV = document.getElementById("englishCV");
 
-englishCV.addEventListener("click", () => {
-  window.open("ClaudioViniciusNogueira-EnglishCV.pdf");
-});
-
-// MY AGE
-const myAgeEl = document.querySelector(".myAge");
-myAgeEl.textContent = new Date().getFullYear() - 1999;
+// englishCV.addEventListener("click", () => {
+//   window.open("ClaudioViniciusNogueira-EnglishCV.pdf");
+// });
