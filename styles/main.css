@@ -361,8 +361,8 @@ footer {
 }
 
 .work--grid {
-  -ms-grid-columns: 1fr 3fr;
-      grid-template-columns: 1fr 3fr;
+  -ms-grid-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 2fr;
 }
 
 .work strong {
@@ -376,7 +376,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.8rem;
+  gap: 1.2rem;
 }
 
 .work-assignments {
@@ -388,6 +388,7 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   grid-column: 2 / -1;
+  text-align: justify;
 }
 
 .education {
