@@ -320,12 +320,14 @@ footer {
 
 .about-text {
   font-size: 1.8rem;
+  letter-spacing: 0.25px;
   line-height: 1.5;
   padding: 0 10rem;
+  text-align: justify;
 }
 
 .about-text-container {
-  margin-bottom: 4.8rem;
+  margin-bottom: 6.4rem;
 }
 
 .about div {

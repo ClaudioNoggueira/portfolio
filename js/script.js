@@ -64,3 +64,7 @@ const englishCV = document.getElementById("englishCV");
 englishCV.addEventListener("click", () => {
   window.open("ClaudioViniciusNogueira-EnglishCV.pdf");
 });
+
+// MY AGE
+const myAgeEl = document.querySelector(".myAge");
+myAgeEl.textContent = new Date().getFullYear() - 1999;
