@@ -208,7 +208,7 @@ footer {
   color: #333;
   font-size: 1.8rem;
   font-weight: 500;
-  height: 8rem;
+  height: 9.6rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -301,6 +301,7 @@ footer {
 
 .hero-section {
   background-color: #e6faee;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero-description {
