@@ -26,7 +26,7 @@ const languages = {
     // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
     // ABOUT
     about: {
-      subheading: "Minha introdução",
+      subheading: "Introdução",
       headingSecondary: "Sobre mim",
       text: {
         intro:
@@ -103,12 +103,24 @@ const languages = {
       viewCode: "Ver código",
 
       // PROJECTS - SIMON GAME
-      simonDescription:
-        "O jogo mostra a primeira cor e toca o som correspondente na sequência (exemplo: verde). O jogador deve prestar atenção e clicar o botão certo (verde).\nEntão, o jogo segue e mostra a próxima cor e som correspondente (exemplo: amarelo), e o jogador tem que lembrar a sequência (primeiro verde depois ...), amarelo e assim o jogo vai seguindo. \nSe o jogador errar o sequência, o jogo termina",
+      simon: {
+        description1:
+          "O jogo mostra a primeira cor e toca o som correspondente na sequência (exemplo: verde). O jogador deve prestar atenção e clicar o botão certo (verde).",
+        description2:
+          "Então, o jogo segue e mostra a próxima cor e som correspondente (exemplo: amarelo), e o jogador tem que lembrar a sequência (primeiro verde depois ...), amarelo e assim o jogo vai seguindo.",
+        description3: "Se o jogador errar o sequência, o jogo termina.",
+      },
 
       // PROJECTS - QUIZ APP
-      quizDescription:
-        "Quiz com 10 questões (em português) de conhecimentos gerais. \nCada questão tem um resposta correta \nDepois da décima questão, é demonstrada a quantidade de acertos \nNa página de pontuação existe um botão para recomeçar o quiz.",
+      quiz: {
+        description1:
+          "Quiz com 10 questões (em português) de conhecimentos gerais.",
+        description2: "Cada questão tem um resposta correta.",
+        description3:
+          "Depois da décima questão, é demonstrada a quantidade de acertos.",
+        description4:
+          "Na página de pontuação existe um botão para recomeçar o quiz.",
+      },
 
       // PROJECTS - KEEPER APP
       keeperDescription: "Clone do Google Keep feito com ReactJS e Material UI",
@@ -242,6 +254,44 @@ document.getElementsByName("changeLanguage").forEach((button) => {
         dictionary = portuguese.skills;
         $("[name='skillsSubheading']").text(dictionary.subheading);
         $("[name='skillsHeadingSecondary']").text(dictionary.headingSecondary);
+
+        // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
+        // PROJECTS
+        dictionary = portuguese.projects;
+        $("[name='projectsSubheading']").text(dictionary.subheading);
+        $("[name='projectsHeadingSecondary']").text(
+          dictionary.headingSecondary
+        );
+        $("[name='projectsLivePreview']").text(dictionary.livePreview);
+        $("[name='projectsNotLive']").text(dictionary.notLive);
+        $("[name='projectsViewCode']").text(dictionary.viewCode);
+
+        // SIMON GAME
+        $("[name='simonDescription1']").text(dictionary.simon.description1);
+        $("[name='simonDescription2']").text(dictionary.simon.description2);
+        $("[name='simonDescription3']").text(dictionary.simon.description3);
+
+        // QUIZ APP
+        $("[name='quizDescription1']").text(dictionary.quiz.description1);
+        $("[name='quizDescription2']").text(dictionary.quiz.description2);
+        $("[name='quizDescription3']").text(dictionary.quiz.description3);
+        $("[name='quizDescription4']").text(dictionary.quiz.description4);
+
+        // KEEPER APP
+        $("[name='keeperDescription']").text(dictionary.keeperDescription);
+
+        // LOGISTICS API
+        $("[name='logisticsApiDescription']").text(
+          dictionary.logisticsApiDescription
+        );
+
+        // DRUM KIT
+        $("[name='drumKitDescription']").text(dictionary.drumKitDescription);
+
+        // NEWS PROJECT
+        $("[name='newsProjectDescription']").text(
+          dictionary.newsProjectDescription
+        );
       }
     }
   });
