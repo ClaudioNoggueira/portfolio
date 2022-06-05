@@ -160,13 +160,15 @@ document.getElementsByName("changeLanguage").forEach((button) => {
       if (button.getAttribute("id") === "portuguese") {
         const portuguese = languages.portuguese;
 
+        // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
         // HEADER
         $("#aboutMeLink").text(portuguese.links.about);
         $("#qualificationLink").text(portuguese.links.qualification);
-        $("#skillsLink").text(portuguese.links.qualification);
+        $("#skillsLink").text(portuguese.links.skills);
         $("#projectsLink").text(portuguese.links.projects);
         $("#contactMeLink").text(portuguese.links.contact);
 
+        // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
         // HERO
         $("#heroHeadingPrimary").text(portuguese.hero.headingPrimary);
         $("#heroSubheading").text(portuguese.hero.subheading);
@@ -174,6 +176,7 @@ document.getElementsByName("changeLanguage").forEach((button) => {
         $("#heroGetInTouch").text(portuguese.hero.getInTouch);
         $("#heroProjects").text(portuguese.hero.projects);
 
+        // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
         // ABOUT
         $("#aboutSubheading").text(portuguese.about.subheading);
         $("#aboutHeadingSecondary").text(portuguese.about.headingSecondary);
@@ -183,6 +186,32 @@ document.getElementsByName("changeLanguage").forEach((button) => {
         $("#aboutDownloadPortugueseCV").text(
           portuguese.about.downloadPortugueseCV
         );
+
+        // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
+        // QUALIFICATION
+        $("#qualificationSubheading").text(portuguese.qualification.subheading);
+        $("#qualificationHeadingSecondary").text(
+          portuguese.qualification.headingSecondary
+        );
+
+        // WORK
+        $("#workHeadingTertiary").text(
+          portuguese.qualification.work.headingTertiary
+        );
+        $("#workRole").text(portuguese.qualification.work.role);
+        $("#workRoleContent").text(portuguese.qualification.work.roleContent);
+        $("#workArea").text(portuguese.qualification.work.area);
+        $("#workAreaContent").text(portuguese.qualification.work.areaContent);
+        $("#workLevel").text(portuguese.qualification.work.level);
+        $("#workLevelContent").text(portuguese.qualification.work.levelContent);
+        $("#workCompany").text(portuguese.qualification.work.company);
+        $("#workDate").text(portuguese.qualification.work.date);
+        $("#workState").text(portuguese.qualification.work.state);
+        $("#workAssignments").text(portuguese.qualification.work.assignments);
+        $("#workAssignmentsContent").text(
+          portuguese.qualification.work.assignmentsContent
+        );
+        $("#workWebsiteLink").text(portuguese.qualification.work.websiteLink);
       }
     }
   });
