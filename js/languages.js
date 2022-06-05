@@ -1,10 +1,10 @@
 const myAge = new Date().getUTCFullYear() - 1999;
-const lineBreaker = document.write(" <br> ");
 
 const languages = {
   portuguese: {
     // HEADER & FOOTER NAV LINKS
     links: {
+      home: "Início",
       about: "Sobre mim",
       qualification: "Qualificação",
       skills: "Habilidades",
@@ -66,9 +66,10 @@ const languages = {
 
       // QUALIFICATION EDUCATION
       education: {
-        headingTertiary: "Experiência acadêmica",
+        headingTertiary: "Acadêmica",
         course: "Curso: ",
         level: "Nível: ",
+        levelTechnical: "Técnico",
         institute: "Instituição: ",
         date: "Período: ",
         websiteLink: "Ver site da instituição ",
@@ -161,57 +162,61 @@ document.getElementsByName("changeLanguage").forEach((button) => {
         const portuguese = languages.portuguese;
 
         // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
-        // HEADER
-        $("#aboutMeLink").text(portuguese.links.about);
-        $("#qualificationLink").text(portuguese.links.qualification);
-        $("#skillsLink").text(portuguese.links.skills);
-        $("#projectsLink").text(portuguese.links.projects);
-        $("#contactMeLink").text(portuguese.links.contact);
+        // HEADER & FOOTER NAV LINKS
+        let dictionary = portuguese.links;
+        $("[name='homeLink']").text(dictionary.home);
+        $("[name='aboutMeLink']").text(dictionary.about);
+        $("[name='qualificationLink']").text(dictionary.qualification);
+        $("[name='skillsLink']").text(dictionary.skills);
+        $("[name='projectsLink']").text(dictionary.projects);
+        $("[name='contactMeLink']").text(dictionary.contact);
 
         // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
         // HERO
-        $("#heroHeadingPrimary").text(portuguese.hero.headingPrimary);
-        $("#heroSubheading").text(portuguese.hero.subheading);
-        $("#heroDescription").text(portuguese.hero.description);
-        $("#heroGetInTouch").text(portuguese.hero.getInTouch);
-        $("#heroProjects").text(portuguese.hero.projects);
+        dictionary = portuguese.hero;
+        $("[name='heroHeadingPrimary']").text(dictionary.headingPrimary);
+        $("[name='heroSubheading']").text(dictionary.subheading);
+        $("[name='heroDescription']").text(dictionary.description);
+        $("[name='heroGetInTouch']").text(dictionary.getInTouch);
+        $("[name='heroProjects']").text(dictionary.projects);
 
         // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
         // ABOUT
-        $("#aboutSubheading").text(portuguese.about.subheading);
-        $("#aboutHeadingSecondary").text(portuguese.about.headingSecondary);
-        $("#aboutTextIntro").text(portuguese.about.text.intro);
-        $("#aboutTextProficiency").text(portuguese.about.text.proficiency);
-        $("#aboutDownloadEnglishCV").text(portuguese.about.downloadEnglishCV);
-        $("#aboutDownloadPortugueseCV").text(
-          portuguese.about.downloadPortugueseCV
+        dictionary = portuguese.about;
+        $("[name='aboutSubheading']").text(dictionary.subheading);
+        $("[name='aboutHeadingSecondary']").text(dictionary.headingSecondary);
+        $("[name='aboutTextIntro']").text(dictionary.text.intro);
+        $("[name='aboutTextProficiency']").text(dictionary.text.proficiency);
+        $("[name='aboutDownloadEnglishCV']").text(dictionary.downloadEnglishCV);
+        $("[name='aboutDownloadPortugueseCV']").text(
+          dictionary.downloadPortugueseCV
         );
 
         // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
         // QUALIFICATION
-        $("#qualificationSubheading").text(portuguese.qualification.subheading);
-        $("#qualificationHeadingSecondary").text(
-          portuguese.qualification.headingSecondary
+        dictionary = portuguese.qualification;
+        $("[name='qualificationSubheading']").text(dictionary.subheading);
+        $("[name='qualificationHeadingSecondary']").text(
+          dictionary.headingSecondary
         );
 
         // WORK
-        $("#workHeadingTertiary").text(
-          portuguese.qualification.work.headingTertiary
+        dictionary = portuguese.qualification.work;
+        $("[name='workHeadingTertiary']").text(dictionary.headingTertiary);
+        $("[name='workRole']").text(dictionary.role);
+        $("[name='workRoleContent']").text(dictionary.roleContent);
+        $("[name='workArea']").text(dictionary.area);
+        $("[name='workAreaContent']").text(dictionary.areaContent);
+        $("[name='workLevel']").text(dictionary.level);
+        $("[name='workLevelContent']").text(dictionary.levelContent);
+        $("[name='workCompany']").text(dictionary.company);
+        $("[name='workDate']").text(dictionary.date);
+        $("[name='workState']").text(dictionary.state);
+        $("[name='workAssignments']").text(dictionary.assignments);
+        $("[name='workAssignmentsContent']").text(
+          dictionary.assignmentsContent
         );
-        $("#workRole").text(portuguese.qualification.work.role);
-        $("#workRoleContent").text(portuguese.qualification.work.roleContent);
-        $("#workArea").text(portuguese.qualification.work.area);
-        $("#workAreaContent").text(portuguese.qualification.work.areaContent);
-        $("#workLevel").text(portuguese.qualification.work.level);
-        $("#workLevelContent").text(portuguese.qualification.work.levelContent);
-        $("#workCompany").text(portuguese.qualification.work.company);
-        $("#workDate").text(portuguese.qualification.work.date);
-        $("#workState").text(portuguese.qualification.work.state);
-        $("#workAssignments").text(portuguese.qualification.work.assignments);
-        $("#workAssignmentsContent").text(
-          portuguese.qualification.work.assignmentsContent
-        );
-        $("#workWebsiteLink").text(portuguese.qualification.work.websiteLink);
+        $("[name='workWebsiteLink']").text(dictionary.websiteLink);
       }
     }
   });
