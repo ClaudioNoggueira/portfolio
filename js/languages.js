@@ -1,4 +1,5 @@
 const myAge = new Date().getUTCFullYear() - 1999;
+const lineBreaker = document.write(" <br> ");
 
 const languages = {
   portuguese: {
@@ -27,12 +28,16 @@ const languages = {
     about: {
       subheading: "Minha introdução",
       headingSecondary: "Sobre mim",
-      text:
-        "Meu nome é Claudio Vinicius Nogueira, tenho " +
-        { myAge } +
-        " anos idade e sou natural de Mauá - SP, Brazil. Tenho formação técnica em informática e administração, e atualmente estou no 6º semestre do curso de tecnólogo em análise e desenvolvimento de sistemas. Tenho 1 ano e meio de experiência como estagiário, e atualmente estou à procura de um cargo de nível trainee ou júnior e seguir carreira na área como programador/desenvolvedor de software. \n\n Tenho proficiência em HTML, CSS, Javascript e Java, com interesse particular em desenvolvimento Back-End utilizando Java e Spring Boot. Tenho boas noções de bancos de dados relacionais (MySQL, PostgreSQL, SQL Server) e recentemente tenho aprofundado meus conhecimentos em UI/UX design.",
-      downloadEnglishCV: "Download currículo em inglês",
-      downloadPortugueseCV: "Download currículo em português",
+      text: {
+        intro:
+          "Meu nome é Claudio Vinicius Nogueira, tenho " +
+          myAge +
+          " anos idade e sou natural de Mauá - SP, Brazil. Tenho formação técnica em informática e administração, e atualmente estou no 6º semestre do curso de tecnólogo em análise e desenvolvimento de sistemas. Tenho 1 ano e meio de experiência como estagiário, e atualmente estou à procura de um cargo de nível trainee ou júnior e seguir carreira na área como programador/desenvolvedor de software. ",
+        proficiency:
+          "Tenho proficiência em HTML, CSS, Javascript e Java, com interesse particular em desenvolvimento Back-End utilizando Java e Spring Boot. Tenho boas noções de bancos de dados relacionais (MySQL, PostgreSQL, SQL Server) e recentemente tenho aprofundado meus conhecimentos em UI/UX design.",
+      },
+      downloadEnglishCV: "Baixar currículo em inglês",
+      downloadPortugueseCV: "Baixar currículo em português",
     },
 
     // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
@@ -168,6 +173,16 @@ document.getElementsByName("changeLanguage").forEach((button) => {
         $("#heroDescription").text(portuguese.hero.description);
         $("#heroGetInTouch").text(portuguese.hero.getInTouch);
         $("#heroProjects").text(portuguese.hero.projects);
+
+        // ABOUT
+        $("#aboutSubheading").text(portuguese.about.subheading);
+        $("#aboutHeadingSecondary").text(portuguese.about.headingSecondary);
+        $("#aboutTextIntro").text(portuguese.about.text.intro);
+        $("#aboutTextProficiency").text(portuguese.about.text.proficiency);
+        $("#aboutDownloadEnglishCV").text(portuguese.about.downloadEnglishCV);
+        $("#aboutDownloadPortugueseCV").text(
+          portuguese.about.downloadPortugueseCV
+        );
       }
     }
   });
