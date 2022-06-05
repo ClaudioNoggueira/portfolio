@@ -236,6 +236,12 @@ document.getElementsByName("changeLanguage").forEach((button) => {
         $("[name='certificationTotalHours']").text(dictionary.totalHours);
         $("[name='certificationConclusion']").text(dictionary.conclusion);
         $("[name='certificationInstructor']").text(dictionary.instructor);
+
+        // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
+        // SKILLS
+        dictionary = portuguese.skills;
+        $("[name='skillsSubheading']").text(dictionary.subheading);
+        $("[name='skillsHeadingSecondary']").text(dictionary.headingSecondary);
       }
     }
   });
