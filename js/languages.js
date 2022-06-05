@@ -152,6 +152,7 @@ const languages = {
         yourName: "Seu nome: ",
         yourEmail: "Seu E-mail: ",
         message: "Mensagem: ",
+        placeholder: "e.g: Eu quero te contratar",
         send: "Enviar ",
       },
     },
@@ -292,6 +293,27 @@ document.getElementsByName("changeLanguage").forEach((button) => {
         $("[name='newsProjectDescription']").text(
           dictionary.newsProjectDescription
         );
+
+        // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
+        // CONTACT
+        dictionary = portuguese.contact;
+        $("[name='contactSubheading']").text(dictionary.subheading);
+        $("[name='contactHeadingSecondary']").text(dictionary.headingSecondary);
+
+        $("[name='callMe']").text(dictionary.callMe);
+        $("[name='emailMe']").text(dictionary.emailME);
+        $("[name='myLocation']").text(dictionary.myLocation);
+
+        // FORM
+        dictionary = portuguese.contact.form;
+        $("[name='formYourName']").text(dictionary.yourName);
+        $("[name='formYourEmail']").text(dictionary.yourEmail);
+        $("[name='formMessage']").text(dictionary.message);
+        $("[name='formMessageTextarea']").attr(
+          "placeholder",
+          dictionary.placeholder
+        );
+        $("[name='formSend']").text(dictionary.send);
       }
     }
   });
