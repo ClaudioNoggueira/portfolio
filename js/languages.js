@@ -226,6 +226,16 @@ document.getElementsByName("changeLanguage").forEach((button) => {
         $("[name='educationLevelTechnical']").text(dictionary.levelTechnical);
         $("[name='educationInstitute']").text(dictionary.institute);
         $("[name='educationDate']").text(dictionary.date);
+
+        // CERTIFICATIONS
+        dictionary = portuguese.qualification.certifications;
+        $("[name='certificationHeadingTertiary']").text(
+          dictionary.headingTertiary
+        );
+        $("[name='certificationCourse']").text(dictionary.course);
+        $("[name='certificationTotalHours']").text(dictionary.totalHours);
+        $("[name='certificationConclusion']").text(dictionary.conclusion);
+        $("[name='certificationInstructor']").text(dictionary.instructor);
       }
     }
   });
