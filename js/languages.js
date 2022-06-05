@@ -314,6 +314,11 @@ document.getElementsByName("changeLanguage").forEach((button) => {
           dictionary.placeholder
         );
         $("[name='formSend']").text(dictionary.send);
+
+        // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
+        // FOOTER
+        dictionary = portuguese.footer;
+        $("[name='footerSubheading']").text(dictionary.subheading);
       }
     }
   });
