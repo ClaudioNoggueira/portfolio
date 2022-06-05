@@ -18,7 +18,7 @@ const languages = {
       subheading: "Desenvolvedor Back-End",
       description:
         "Técnico em Informática e Administração, Tecnólogo em Análise e Desenvolvimento de Sistemas em formação",
-      contactMe: "Entrar em contato",
+      getInTouch: "Entrar em contato",
       projects: "Veja meus projetos",
     },
 
@@ -102,7 +102,7 @@ const languages = {
 
       // PROJECTS - QUIZ APP
       quizDescription:
-        "Quiz com 10 questões (em português) \nCada questão tem um resposta correta \nDepois da décima questão, é demonstrada a quantidade de acertos \nNa página de pontuação existe um botão para recomeçar o quiz.",
+        "Quiz com 10 questões (em português) de conhecimentos gerais. \nCada questão tem um resposta correta \nDepois da décima questão, é demonstrada a quantidade de acertos \nNa página de pontuação existe um botão para recomeçar o quiz.",
 
       // PROJECTS - KEEPER APP
       keeperDescription: "Clone do Google Keep feito com ReactJS e Material UI",
@@ -145,3 +145,23 @@ const languages = {
     },
   },
 };
+
+// SWITCH LANGUAGE
+
+// In case there is more language changing buttons in the future
+document.getElementsByName("changeLanguage").forEach((button) => {
+  button.addEventListener("click", () => {
+    if (button.getAttribute("id")) {
+      if (button.getAttribute("id") === "portuguese") {
+        const portuguese = languages.portuguese;
+
+        // HEADER
+        $("#aboutMeLink").text(portuguese.links.about);
+        $("#qualificationLink").text(portuguese.links.qualification);
+        $("#skillsLink").text(portuguese.links.qualification);
+        $("#projectsLink").text(portuguese.links.projects);
+        $("#contactMeLink").text(portuguese.links.contact);
+      }
+    }
+  });
+});
