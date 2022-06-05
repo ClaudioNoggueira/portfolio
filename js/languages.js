@@ -14,7 +14,7 @@ const languages = {
     // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
     // HERO
     hero: {
-      headingPrimary: "Olá, eu sou o Claudio. Prazer em conhecê-lo",
+      headingPrimary: "Olá, meu nome é Claudio. Muito prazer.",
       subheading: "Desenvolvedor Back-End",
       description:
         "Técnico em Informática e Administração, Tecnólogo em Análise e Desenvolvimento de Sistemas em formação",
@@ -161,6 +161,13 @@ document.getElementsByName("changeLanguage").forEach((button) => {
         $("#skillsLink").text(portuguese.links.qualification);
         $("#projectsLink").text(portuguese.links.projects);
         $("#contactMeLink").text(portuguese.links.contact);
+
+        // HERO
+        $("#heroHeadingPrimary").text(portuguese.hero.headingPrimary);
+        $("#heroSubheading").text(portuguese.hero.subheading);
+        $("#heroDescription").text(portuguese.hero.description);
+        $("#heroGetInTouch").text(portuguese.hero.getInTouch);
+        $("#heroProjects").text(portuguese.hero.projects);
       }
     }
   });
