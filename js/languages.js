@@ -217,6 +217,15 @@ document.getElementsByName("changeLanguage").forEach((button) => {
           dictionary.assignmentsContent
         );
         $("[name='workWebsiteLink']").text(dictionary.websiteLink);
+
+        // EDUCATION
+        dictionary = portuguese.qualification.education;
+        $("[name='educationHeadingTertiary']").text(dictionary.headingTertiary);
+        $("[name='educationCourse']").text(dictionary.course);
+        $("[name='educationLevel']").text(dictionary.level);
+        $("[name='educationLevelTechnical']").text(dictionary.levelTechnical);
+        $("[name='educationInstitute']").text(dictionary.institute);
+        $("[name='educationDate']").text(dictionary.date);
       }
     }
   });
