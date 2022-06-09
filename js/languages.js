@@ -128,3 +128,18 @@ function translateToPortuguese() {
     $(`[name="${attribute[0]}"]`).text(attribute[1]);
   });
 }
+
+document.getElementsByName(`changeLanguage`).forEach((button) => {
+  button.addEventListener(`click`, () => {
+    const switchLabel = document.getElementById(`switch-label`);
+    if (button.classList.contains(`on`)) {
+      switchLabel.textContent = `Trocar idioma para português`;
+      location.reload();
+    } else {
+      switchLabel.textContent = `Change language to english`;
+      translateToPortuguese();
+    }
+
+    button.classList.toggle(`on`);
+  });
+});
