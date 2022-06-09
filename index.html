@@ -39,12 +39,12 @@
 
         <nav class="main-nav">
             <ul class="main-nav-list flex">
-                <li><a href="#" class="main-nav-link">Home</a></li>
-                <li><a href="#about" class="main-nav-link">About Me</a></li>
-                <li><a href="#qualification" class="main-nav-link">Qualification</a></li>
-                <li><a href="#skills" class="main-nav-link">Skills</a></li>
-                <li><a href="#projects" class="main-nav-link">Projects</a></li>
-                <li><a href="#contact" class="main-nav-link nav-contact">Contact Me</a></li>
+                <li><a href="#" class="main-nav-link" name="linkHome">Home</a></li>
+                <li><a href="#about" class="main-nav-link" name="linkAbout">About Me</a></li>
+                <li><a href="#qualification" class="main-nav-link" name="linkQualification">Qualification</a></li>
+                <li><a href="#skills" class="main-nav-link" name="linkSkills">Skills</a></li>
+                <li><a href="#projects" class="main-nav-link" name="linkProjects">Projects</a></li>
+                <li><a href="#contact" class="main-nav-link nav-contact" name="linkContact">Contact Me</a></li>
             </ul>
         </nav>
 
@@ -57,34 +57,42 @@
     <main>
         <section class="hero-section">
             <div class="hero flex">
-                <h1 class="heading-primary">Hi, I'm Claudio. Nice to meet you.</h1>
-                <span class="subheading">Back-End Developer</span>
-                <p class="hero-description">IT and Administration Technician, future Technologist in Systems
+                <h1 class=" heading-primary" name="heroHeadingPrimary">Hi, I'm Claudio. Nice to meet you.</h1>
+                <span class="subheading" name="heroSubheading">Back-End Developer</span>
+                <p class="hero-description" name="heroDescription">IT and Administration Technician, future Technologist
+                    in Systems
                     Analysis
                     and Development</p>
-                <div class="flex">
-                    <a href="#contact" class="btn btn--full">Get in touch</a>
-                    <a href="#projects" class="btn btn--outline">See my projects</a>
+                <div class="flex margin-bottom-big">
+                    <a href="#contact" class="btn btn--full" name="heroGetInTouch">Get in touch</a>
+                    <a href="#projects" class="btn btn--outline" name="heroProjects">See my projects</a>
+                </div>
+                <div class="language-switch-container">
+                    <label for="changeLanguage" id="switch-label">Trocar idioma para português</label>
+                    <button class="flex checkbox" role="switch" aria-checked="false" id="portuguese"
+                        name="changeLanguage"></button>
                 </div>
             </div>
         </section>
 
         <section class="about-section" id="about">
             <div class="container">
-                <p class="subheading center margin-bottom-small">My Introduction</p>
-                <h2 class="heading-secondary center margin-bottom-big">About Me</h2>
+                <p class="subheading center margin-bottom-small" name="aboutSubheading">My Introduction</p>
+                <h2 class="heading-secondary center margin-bottom-big" name="aboutHeadingSecondary">About Me</h2>
                 <div class="about">
                     <div class="about-text-container">
-                        <p class="about-text">
+                        <p class="about-text" name="aboutTextIntro">
                             My name is Claudio Vinicius Nogueira, I'm <span class="myAge"></span> years old and I'm from
-                            Mauá - SP, Brazil. I
+                            São Paulo, Brazil. I
                             have technical training in
                             computer science and administration, and I am currently in the 6th semester of the
                             technologist course in systems
                             analysis and development. I have 1 year and a half of experience as an intern, and I'm
                             currently looking for a trainee
                             or junior level position and pursue a career in the area as a software programmer/developer.
-                            <br> <br>
+                        </p>
+                        <br><br>
+                        <p class="about-text" name="aboutTextProficiency">
                             I have proficiency in HTML, CSS, Javascript and Java, with particular interest in Back-End
                             development using Java and
                             Spring Boot. I have good knowledge of SQL databases (MySQL, PostgreSQL, SQL Server) and
@@ -95,13 +103,13 @@
                     <div class="flex">
                         <a href="https://docs.google.com/document/d/1SH6hJDLomV6l2Qgtee3ZuS_zcX7QLbXu6mZEVoOvxEo/edit?usp=sharing"
                             target="_blank" class="btn btn--full">
-                            <span> Download English CV</span>
+                            <span name="aboutDownloadEnglishCV"> Download English CV</span>
                             <i class="btn-icon uil uil-download-alt"></i>
                         </a>
 
                         <a href="https://docs.google.com/document/d/1_FB8S1fIXVOKVYaDH3qwgJotCQHJM9PuNPuBoe-5m0c/edit?usp=sharing"
                             target="_blank" class="btn btn--full">
-                            <span> Download Portuguese CV</span>
+                            <span name="aboutDownloadPortugueseCV"> Download Portuguese CV</span>
                             <i class="btn-icon uil uil-download-alt"></i>
                         </a>
                     </div>
@@ -111,12 +119,13 @@
 
         <section class="qualification-section" id="qualification">
             <div class="container">
-                <p class="subheading center margin-bottom-small">My Personal Journey</p>
-                <h2 class="heading-secondary center margin-bottom-bigger">Qualification</h2>
+                <p class="subheading center margin-bottom-small" name="qualificationSubheading">My Personal Journey</p>
+                <h2 class="heading-secondary center margin-bottom-bigger" name="qualificationHeadingSecondary">
+                    Qualification</h2>
 
                 <!-- WORK -->
                 <h3 class="heading-tertiary center margin-bottom-medium">
-                    <span> Work </span>
+                    <span name="qualificationWorkHeadingTertiary"> Work </span>
                 </h3>
                 <div class="center">
                     <i class="qualification-icon uil uil-briefcase-alt"></i>
@@ -125,51 +134,50 @@
                     <div class="work-details flex">
                         <div>
                             <div>
-                                <strong>Role:</strong>
-                                <span>IT Intern</span>
+                                <strong name="qualificationWorkRole">Role:</strong>
+                                <span name="qualificationWorkRoleContent">IT Intern</span>
                             </div>
                             <div>
-                                <strong>Area:</strong>
-                                <span>IT, Telecommunications</span>
+                                <strong name="qualificationWorkArea">Area:</strong>
+                                <span name="qualificationWorkAreaContent">IT, Telecommunications</span>
                             </div>
                             <div>
-                                <strong>Level:</strong>
-                                <span>Intern</span>
+                                <strong name="qualificationWorkLevel">Level:</strong>
+                                <span name="qualificationWorkLevelContent">Intern</span>
                             </div>
                         </div>
                         <div>
                             <div>
-                                <strong>Company:</strong>
+                                <strong name="qualificationWorkCompany">Company:</strong>
                                 <span>Fundação CASA</span>
                             </div>
                             <div>
-                                <strong>Date:</strong>
+                                <strong name="qualificationWorkDate">Date:</strong>
                                 <span>02/2020 - 07/2021</span>
                             </div>
                             <div>
-                                <strong>State:</strong>
+                                <strong name="qualificationWorkState">State:</strong>
                                 <span>São Paulo, São Paulo - SP</span>
                             </div>
                         </div>
                     </div>
                     <div class="work-assignments flex">
-                        <p class="assignments-tex">
-                            <strong>Job Assignments:</strong>
+                        <strong name="qualificationWorkAssignments">Job Assignments:</strong>
+                        <p class="assignments-tex" name="qualificationWorkAssignmentsContent">
                             Supervised monitoring of systems operations, collaborate in the development of new
                             Projects involving systems, lead support in small system developments, conduct
                             evaluation and configuration of systems development tools, lead assistance in
                             feeding the database into the system, offer support in the implementation of
                             systems.
                         </p>
-                        <a class="link" href="https://www.fundacaocasa.sp.gov.br/" target="_blank">See company
-                            site
-                            &rarr;</a>
+                        <a class="link" href="https://www.fundacaocasa.sp.gov.br/" target="_blank"
+                            name="qualificationWorkWebsiteLink">See company site &rarr;</a>
                     </div>
                 </div>
 
                 <!-- EDUCATION -->
                 <h3 class="heading-tertiary center margin-bottom-medium">
-                    <span>Education</span>
+                    <span name="qualificationEducationHeadingTertiary">Education</span>
                 </h3>
                 <div class="education grid grid--3-cols margin-bottom-big">
                     <div class="course-details">
@@ -177,77 +185,75 @@
                             <i class="qualification-icon uil uil-graduation-cap"></i>
                         </div>
                         <div>
-                            <strong>Course:</strong>
+                            <strong name="qualificationEducationCourse">Course:</strong>
                             <span>Tecnólogo em Análise e Desenvolvimento de Sistemas</span>
                         </div>
                         <div>
-                            <strong>Level:</strong>
+                            <strong name="qualificationEducationLevel">Level:</strong>
                             <span>Superior</span>
                         </div>
                         <div>
-                            <strong>Institute:</strong>
+                            <strong name="qualificationEducationInstitute">Institute:</strong>
                             <span>Faculdade de Tecnologia da Zona Sul</span>
                         </div>
                         <div>
-                            <strong>Date:</strong>
+                            <strong name="qualificationEducationDate">Date:</strong>
                             <span>02/2019 - 12/2022</span>
                         </div>
-                        <a class="link" href="http://fateczonasul.edu.br" target="_blank" rel="noopener noreferrer">See
-                            website &rarr;</a>
+                        <a class="link" href="http://fateczonasul.edu.br" target="_blank" rel="noopener noreferrer"
+                            name="qualificationEducationWebsiteLink">See website &rarr;</a>
                     </div>
                     <div class="course-details">
                         <div class="center">
                             <i class="qualification-icon uil uil-graduation-cap"></i>
                         </div>
                         <div>
-                            <strong>Course:</strong>
+                            <strong name="qualificationEducationCourse">Course:</strong>
                             <span>Administração</span>
                         </div>
                         <div>
-                            <strong>Level:</strong>
-                            <span>Technical</span>
+                            <strong name="qualificationEducationLevel">Level:</strong>
+                            <span name="qualificationEducationLevelTechnical">Technical</span>
                         </div>
                         <div>
-                            <strong>Institute:</strong>
+                            <strong name="qualificationEducationInstitute">Institute:</strong>
                             <span>Escola Técnica Irmã Agostina</span>
                         </div>
                         <div>
-                            <strong>Date:</strong>
+                            <strong name="qualificationEducationDate">Date:</strong>
                             <span>02/2019 - 06/2020</span>
                         </div>
-                        <a class="link" href="https://etecia.com.br/" target="_blank" rel="noopener noreferrer">See
-                            website
-                            &rarr;</a>
+                        <a class="link" href="https://etecia.com.br/" target="_blank" rel="noopener noreferrer"
+                            name="qualificationEducationWebsiteLink">See website &rarr;</a>
                     </div>
                     <div class="course-details">
                         <div class="center">
                             <i class="qualification-icon uil uil-graduation-cap"></i>
                         </div>
                         <div>
-                            <strong>Course:</strong>
+                            <strong name="qualificationEducationCourse">Course:</strong>
                             <span>Informática</span>
                         </div>
                         <div>
-                            <strong>Level:</strong>
-                            <span>Technical</span>
+                            <strong name="qualificationEducationLevel">Level:</strong>
+                            <span name="qualificationEducationLevelTechnical">Technical</span>
                         </div>
                         <div>
-                            <strong>Institute:</strong>
+                            <strong name="qualificationEducationInstitute">Institute:</strong>
                             <span>Escola Técnica Irmã Agostina</span>
                         </div>
                         <div>
-                            <strong>Date:</strong>
+                            <strong name="qualificationEducationDate">Date:</strong>
                             <span>08/2017 - 12/2018</span>
                         </div>
-                        <a class="link" href="https://etecia.com.br/" target="_blank" rel="noopener noreferrer">See
-                            website
-                            &rarr;</a>
+                        <a class="link" href="https://etecia.com.br/" target="_blank" rel="noopener noreferrer"
+                            name="qualificationEducationWebsiteLink">See website &rarr;</a>
                     </div>
                 </div>
 
                 <!-- CERTIFICATIONS -->
                 <h3 class="heading-tertiary center margin-bottom-medium">
-                    <span> Certifications</span>
+                    <span name="qualificationCertificationsHeadingTertiary"> Certifications</span>
                 </h3>
 
                 <div class="certifications grid grid--2-cols">
@@ -256,92 +262,93 @@
                             <i class="qualification-icon uil uil-star"></i>
                         </div>
                         <div>
-                            <strong>Course:</strong>
+                            <strong name="qualificationCertificationsCourse">Course:</strong>
                             <span>Build Responsive Real-World Websites with HTML and CSS</span>
                         </div>
                         <div>
-                            <strong>Total Hours:</strong>
+                            <strong name="qualificationCertificationsTotalHours">Total Hours:</strong>
                             <span>37.5</span>
                         </div>
                         <div>
-                            <strong>Conclusion:</strong>
+                            <strong name="qualificationCertificationsConclusion">Conclusion:</strong>
                             <span>2022</span>
                         </div>
                         <div>
-                            <strong>Instructor:</strong>
+                            <strong name="qualificationCertificationsInstructor">Instructor:</strong>
                             <span>Jonas Schmedtmann</span>
                         </div>
                         <a href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/"
-                            class="link" target="_blank">Course link &rarr;</a>
+                            class="link" target="_blank" name="qualificationCertificationsCourseLink">Course link
+                            &rarr;</a>
                     </div>
                     <div class="certification-details">
                         <div class="center">
                             <i class="qualification-icon uil uil-star"></i>
                         </div>
                         <div>
-                            <strong>Course:</strong>
+                            <strong name="qualificationCertificationsCourse">Course:</strong>
                             <span>The Complete 2022 Web Development Bootcamp</span>
                         </div>
                         <div>
-                            <strong>Total Hours:</strong>
+                            <strong name="qualificationCertificationsTotalHours">Total Hours:</strong>
                             <span>65.5</span>
                         </div>
                         <div>
-                            <strong>Conclusion:</strong>
+                            <strong name="qualificationCertificationsConclusion">Conclusion:</strong>
                             <span>2022</span>
                         </div>
                         <div>
-                            <strong>Instructor:</strong>
+                            <strong name="qualificationCertificationsInstructor">Instructor:</strong>
                             <span>Dr. Angela Yu</span>
                         </div>
                         <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/" class="link"
-                            target="_blank">Course link &rarr;</a>
+                            target="_blank" name="qualificationCertificationsCourseLink">Course link &rarr;</a>
                     </div>
                     <div class="certification-details">
                         <div class="center">
                             <i class="qualification-icon uil uil-star"></i>
                         </div>
                         <div>
-                            <strong>Course:</strong>
+                            <strong name="qualificationCertificationsCourse">Course:</strong>
                             <span>Java COMPLETO Programação Orientada a Objetos + Projetos</span>
                         </div>
                         <div>
-                            <strong>Total Hours:</strong>
+                            <strong name="qualificationCertificationsTotalHours">Total Hours:</strong>
                             <span>51.5</span>
                         </div>
                         <div>
-                            <strong>Conclusion:</strong>
+                            <strong name="qualificationCertificationsConclusion">Conclusion:</strong>
                             <span>2020</span>
                         </div>
                         <div>
-                            <strong>Instructor:</strong>
+                            <strong name="qualificationCertificationsInstructor">Instructor:</strong>
                             <span>Nelio Alves</span>
                         </div>
-                        <a href="https://www.udemy.com/course/java-curso-completo/" class="link" target="_blank">Course
-                            link &rarr;</a>
+                        <a href="https://www.udemy.com/course/java-curso-completo/" target="_blank" class="link"
+                            name="qualificationCertificationsCourseLink">Course link &rarr;</a>
                     </div>
                     <div class="certification-details">
                         <div class="center">
                             <i class="qualification-icon uil uil-star"></i>
                         </div>
                         <div>
-                            <strong>Course:</strong>
+                            <strong name="qualificationCertificationsCourse">Course:</strong>
                             <span>C# COMPLETO Programação Orientada a Objetos + Projetos</span>
                         </div>
                         <div>
-                            <strong>Total Hours:</strong>
+                            <strong name="qualificationCertificationsTotalHours">Total Hours:</strong>
                             <span>38</span>
                         </div>
                         <div>
-                            <strong>Conclusion:</strong>
+                            <strong name="qualificationCertificationsConclusion">Conclusion:</strong>
                             <span>2020</span>
                         </div>
                         <div>
-                            <strong>Instructor:</strong>
+                            <strong name="qualificationCertificationsInstructor">Instructor:</strong>
                             <span>Nelio Alves</span>
                         </div>
-                        <a href="https://www.udemy.com/course/programacao-orientada-a-objetos-csharp/" class="link"
-                            target="_blank">Course link &rarr;</a>
+                        <a href="https://www.udemy.com/course/programacao-orientada-a-objetos-csharp/" target="_blank"
+                            class="link" name="qualificationCertificationsCourseLink">Course link &rarr;</a>
                     </div>
                 </div>
             </div>
@@ -349,8 +356,8 @@
 
         <section class="skills-section" id="skills">
             <div class="container margin-bottom-big">
-                <p class="subheading center margin-bottom-small">My Technical Repertoire</p>
-                <h2 class="heading-secondary center margin-bottom-bigger">My Skills</h2>
+                <p class="subheading center margin-bottom-small" name="skillsSubheading">My Technical Repertoire</p>
+                <h2 class="heading-secondary center margin-bottom-bigger" name="skillsHeadingSecondary">My Skills</h2>
 
                 <h3 class="heading-tertiary center margin-bottom-small">Frontend</h3>
                 <div class="skills flex margin-bottom-big">
@@ -417,19 +424,19 @@
 
         <section class="projects-section" id="projects">
             <div class="container">
-                <p class="subheading center margin-bottom-small">My Recent Work</p>
-                <h2 class="heading-secondary center margin-bottom-bigger">Projects</h2>
+                <p class="subheading center margin-bottom-small" name="projectsSubheading">My Recent Work</p>
+                <h2 class="heading-secondary center margin-bottom-bigger" name="projectsHeadingSecondary">Projects</h2>
 
                 <!-- SIMON GAME -->
                 <div class="projects grid grid--2-cols">
                     <div class="project-text-container flex">
                         <h3 class="project-title">Simon game</h3>
-                        <p class="project-description">
+                        <p class="project-description" name="projectsSimonDescription">
                             The game shows the first color and plays the corresponding sound in the sequence (like
                             green). The user gotta pay attention and click the right button (green).
                             <br>
-                            Then, the game shows the next color and sound (like yellow), the user has to remember the
-                            sequence (green first then ...), yellow and so on and so forth.
+                            Then, the game shows the next color and sound (like yellow), the user has to remember
+                            the sequence (green first then ...), yellow and so on and so forth.
                             <br>
                             If the user messes up the sequence, then the game ends.
                         </p>
@@ -441,9 +448,9 @@
                         </ul>
                         <div class="flex">
                             <a href="https://claudionoggueira.github.io/simon-game/" target="_blank"
-                                class="btn btn--full">Live preview</a>
+                                class="btn btn--full" name="projectsLivePreview">Live preview</a>
                             <a href="https://github.com/ClaudioNoggueira/simon-game" target="_blank"
-                                class="btn btn--outline">View code</a>
+                                class="btn btn--outline" name="projectsViewCode">View code</a>
                         </div>
                     </div>
                     <div class="project-image-container">
@@ -458,14 +465,14 @@
                     </div>
                     <div class="project-text-container flex">
                         <h3 class="project-title">Quiz App</h3>
-                        <p class="project-description">
-                            Quiz app with 10 questions (Portuguese questions)
+                        <p class="project-description" name="projectsQuizDescription">
+                            Quiz app with 10 questions (Portuguese questions).
                             <br>
-                            Each question has one right answer
+                            Each question has one right answer.
                             <br>
-                            After the 10th question you get your score
+                            After the 10th question you get your score.
                             <br>
-                            On the score page, there is a button to try again
+                            On the score page, there is a button to try again.
                         </p>
                         <ul class="project-technologies-used flex">
                             <li>HTML5</li>
@@ -473,11 +480,10 @@
                             <li>Javascript</li>
                         </ul>
                         <div class="flex">
-                            <a href="https://claudionoggueira.github.io/quiz-app/" target="_blank"
-                                class="btn btn--full">Live preview</a>
+                            <a href="https://claudionoggueira.github.io/quiz-app/" target="_blank" class="btn btn--full"
+                                name="projectsLivePreview">Live preview</a>
                             <a href="https://github.com/ClaudioNoggueira/quiz-app" target="_blank"
-                                class="btn btn--outline">View
-                                code</a>
+                                class="btn btn--outline" name="projectsViewCode">View code</a>
                         </div>
                     </div>
                 </div>
@@ -486,7 +492,7 @@
                 <div class="projects grid grid--2-cols">
                     <div class="project-text-container flex">
                         <h3 class="project-title">Keeper App</h3>
-                        <p class="project-description">
+                        <p class="project-description" name="projectsKeeperDescription">
                             ReactJS Google keep clone using Material UI
                         </p>
                         <ul class="project-technologies-used flex">
@@ -497,10 +503,9 @@
                         </ul>
                         <div class="flex">
                             <a href="https://happy-varahamihira-b17831.netlify.app/" target="_blank"
-                                class="btn btn--full">Live preview</a>
+                                class="btn btn--full" name="projectsLivePreview">Live preview</a>
                             <a href="https://github.com/ClaudioNoggueira/keeper-app" target="_blank"
-                                class="btn btn--outline">View
-                                code</a>
+                                class="btn btn--outline" name="projectsViewCode">View code</a>
                         </div>
                     </div>
                     <div class="project-image-container">
@@ -515,8 +520,9 @@
                     </div>
                     <div class="project-text-container flex">
                         <h3 class="project-title">Logistics-API</h3>
-                        <p class="project-description">
-                            RESTful API for a delivery project
+                        <p class="project-description" name="projectsLogisticsApiDescription">
+                            Application Programming Interface (API) using REpresentation State Transfer (REST)
+                            architecture designed for logistics of a delivery project.
                         </p>
                         <ul class="project-technologies-used flex">
                             <li>Java</li>
@@ -525,9 +531,10 @@
                             <li>PostgreSQL</li>
                         </ul>
                         <div class="flex">
-                            <a href="#" class="btn btn--full">⚠ Not live</a>
+                            <a href="#projects" class="btn btn--full not-live" name="projectsNotLive">⚠ Not
+                                live</a>
                             <a href="https://github.com/ClaudioNoggueira/logistics-api" target="_blank"
-                                class="btn btn--outline">View
+                                class="btn btn--outline" name="projectsViewCode">View
                                 code</a>
                         </div>
                     </div>
@@ -537,7 +544,7 @@
                 <div class="projects grid grid--2-cols">
                     <div class="project-text-container flex">
                         <h3 class="project-title">Drum kit</h3>
-                        <p class="project-description">
+                        <p class="project-description" name="projectsDrumKitDescription">
                             Drum kit made with HTML, CSS and Javascript. Click on the buttons or press the corresponding
                             key.
                         </p>
@@ -547,11 +554,10 @@
                             <li>Javascript</li>
                         </ul>
                         <div class="flex">
-                            <a href="https://claudionoggueira.github.io/drum-kit/" target="_blank"
-                                class="btn btn--full">Live preview</a>
+                            <a href="https://claudionoggueira.github.io/drum-kit/" target="_blank" class="btn btn--full"
+                                name="projectsLivePreview">Live preview</a>
                             <a href="https://github.com/ClaudioNoggueira/drum-kit" target="_blank"
-                                class="btn btn--outline">View
-                                code</a>
+                                class="btn btn--outline" name="projectsViewCode">View code</a>
                         </div>
                     </div>
                     <div class="project-image-container">
@@ -566,18 +572,9 @@
                     </div>
                     <div class="project-text-container flex">
                         <h3 class="project-title">NewsProject</h3>
-                        <p class="project-description">
-                            RESTful API for news with author and categories
-                            <br>
-                            <br>
-                            Features:
-                            <br>
-                            CRUD news
-                            <br>
-                            CRU categories (no Delete)
-                            <br>
-                            CRU authors (no Delete)
-                            <br>
+                        <p class="project-description" name="projectsNewsProjectDescription">
+                            Application Programming Interface (API) using REpresentation State Transfer (REST)
+                            architecture for a project of online newspaper.
                         </p>
                         <ul class="project-technologies-used flex">
                             <li>Java</li>
@@ -586,10 +583,9 @@
                             <li>PostgreSQL</li>
                         </ul>
                         <div class="flex">
-                            <a href="#" class="btn btn--full">⚠ Not live</a>
+                            <a href="#projects" class="btn btn--full not-live" name="projectsNotLive">⚠ Not live</a>
                             <a href="https://github.com/ClaudioNoggueira/news-project" target="_blank"
-                                class="btn btn--outline">View
-                                code</a>
+                                class="btn btn--outline" name="projectsViewCode">View code</a>
                         </div>
                     </div>
                 </div>
@@ -598,21 +594,21 @@
 
         <section class="contact-section" id="contact">
             <div class="container">
-                <p class="subheading center margin-bottom-small">Get in touch</p>
-                <h2 class="heading-secondary center margin-bottom-bigger">Contact Me</h2>
+                <p class="subheading center margin-bottom-small" name="contactSubheading">Get in touch</p>
+                <h2 class="heading-secondary center margin-bottom-bigger" name="contactHeadingSecondary">Contact Me</h2>
                 <div class="contact grid contact--grid">
                     <div class="contact-container">
                         <div class="contact-info flex">
                             <i class="contact-icon uil uil-phone"></i>
                             <div>
-                                <span>Call Me:</span>
+                                <span name="contactCallMe">Call Me:</span>
                                 <p>+55 11 9 4067-1246</p>
                             </div>
                         </div>
                         <div class="contact-info flex">
                             <i class="contact-icon uil uil-envelope"></i>
                             <div>
-                                <span>Email Me:</span>
+                                <span name="contactEmailMe">Email Me:</span>
                                 <p>cllaudionoggueira@gmail.com</p>
                                 <p>claudionoggueira@outlook.com</p>
                             </div>
@@ -620,30 +616,29 @@
                         <div class="contact-info flex">
                             <i class="contact-icon uil uil-location-point"></i>
                             <div>
-                                <span>My Location:</span>
-
+                                <span name="contactMyLocation">My Location:</span>
                                 <p>São Paulo, SP &dash; Brazil</p>
                             </div>
                         </div>
                     </div>
                     <form class="contact-form flex" name="send-message" netlify>
                         <div>
-                            <label for="name">Your name:</label>
-                            <input type="text" name="name" id="name" placeholder="e.g.: Connor MacLeod"
+                            <label for="name" name="contactFormYourName">Your name:</label>
+                            <input type="text" name="name" name="name" placeholder="e.g: Connor MacLeod"
                                 pattern="[a-zA-Z ]*" required>
                         </div>
                         <div>
-                            <label for="name">Your email:</label>
-                            <input type="email" name="email" id="email" placeholder="e.g.: connormacleod@email.com"
+                            <label for="name" name="contactFormYourEmail">Your email:</label>
+                            <input type="email" name="email" name="email" placeholder="e.g: connormacleod@email.com"
                                 required>
                         </div>
                         <div>
-                            <label for="message">Message:</label>
-                            <textarea name="message" id="message" cols="30" placeholder="e. g.: I want to hire you"
-                                rows="6" required></textarea>
+                            <label for="message" name="contactFormMessage">Message:</label>
+                            <textarea name="message" name="formMessageTextarea" cols="30"
+                                placeholder="e.g: I want to hire you" rows="6" required></textarea>
                         </div>
                         <button>
-                            <span>Send</span>
+                            <span name="contactFormSend">Send</span>
                             <i class="uil uil-message"></i>
                         </button>
                     </form>
@@ -660,7 +655,7 @@
                         <i class="logo-icon uil uil-github"></i>
                         <span>/ClaudioNoggueira</span>
                     </a>
-                    <p class="logo-subheading margin-bottom-big">Back-End Developer</p>
+                    <p class="logo-subheading margin-bottom-big" name="footerSubheading">Back-End Developer</p>
                     <p class="copyright">Copyright &#169; <span class="year"></span> by ClaudioNoggueira.
                         All rights reserved.</p>
                 </div>
@@ -675,20 +670,16 @@
                     <a href="https://discord.com/users/ClaudioNogueira#7216" rel="noreferrer" target="_blank">
                         <i class="social-icon uil uil-discord" title="Discord"></i>
                     </a>
-
-                    <!-- <a href="https://www.buymeacoffee.com/claudionogueira" target="_blank">
-                                        <img class="social-image" title="Buy Me a Coffee"
-                                            src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/96/000000/external-buy-me-a-coffee-help-creators-receive-support-from-their-audience-logo-shadow-tal-revivo.png"
-                                            target="_blank" alt="Buy Me a Coffee Logo" />
-                                    </a> -->
                 </div>
                 <nav>
                     <ul class="footer-nav-list flex">
-                        <li><a href="#" class="footer-nav-link">Home</a></li>
-                        <li><a href="#about" class="footer-nav-link">About Me</a></li>
-                        <li><a href="#qualification" class="footer-nav-link">Qualification</a></li>
-                        <li><a href="#skills" class="footer-nav-link">Skills</a></li>
-                        <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+                        <li><a href="#" class="footer-nav-link" name="linkHome">Home</a></li>
+                        <li><a href="#about" class="footer-nav-link" name="linkAbout">About Me</a></li>
+                        <li><a href="#qualification" class="footer-nav-link" name="linkQualification">Qualification</a>
+                        </li>
+                        <li><a href="#skills" class="footer-nav-link" name="linkSkills">Skills</a></li>
+                        <li><a href="#projects" class="footer-nav-link" name="linkProjects">Projects</a></li>
+                        <li><a href="#contact" class="footer-nav-link" name="linkContact">Contact Me</a></li>
                     </ul>
                 </nav>
 
@@ -696,6 +687,10 @@
         </div>
     </footer>
 
+    <!-- jQuery Google CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="js/languages.js"></script>
     <script src="js/script.js"></script>
 </body>
 
