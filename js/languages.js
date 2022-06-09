@@ -68,15 +68,15 @@ const dictionary = {
     // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
     // SKILLS
     skillsSubheading: `Meu Repertório Técnico`,
-    skillsHeadingSecondary: `Minhas habilidades`,
+    skillsHeadingSecondary: `Competências`,
 
     // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
     // PROJECTS
     projectsSubheading: `Meus Trabalhos Mais Recentes`,
-    projectsheadingSecondary: `Meus Projetos`,
-    projectslivePreview: `Ver projeto no ar`,
-    projectsnotLive: `⚠ Fora do ar`,
-    projectsviewCode: `Ver código`,
+    projectsHeadingSecondary: `Meus Projetos`,
+    projectsLivePreview: `Ver projeto no ar`,
+    projectsNotLive: `⚠ Fora do ar`,
+    projectsViewCode: `Ver código`,
 
     // PROJECTS - SIMON GAME
     projectsSimonDescription: `O jogo mostra a primeira cor e toca o som correspondente na sequência (exemplo: verde). O jogador deve prestar atenção e clicar o botão certo (verde). Então, o jogo segue e mostra a próxima cor e som correspondente (exemplo: amarelo), e o jogador tem que lembrar a sequência (primeiro verde depois ...), amarelo e assim o jogo vai seguindo. Se o jogador errar o sequência, o jogo termina.`,
