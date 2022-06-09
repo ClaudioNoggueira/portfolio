@@ -116,3 +116,15 @@ const dictionary = {
     footerSubheading: `Desenvolvedor Back-End`,
   },
 };
+
+// SWITCH LANGUAGE
+// Language changing function to PORTUGUESE
+function translateToPortuguese() {
+  const portuguese = dictionary.portuguese;
+  // Convert portugueses object to array and map throw each value (which are the object attributes)
+  Object.entries(portuguese).map((attribute) => {
+    // attribute[0] = name of the attribute, which is the same name of the name attributes in the HTML
+    // attribute[1] = value of the attribute (translated words and sentences)
+    $(`[name="${attribute[0]}"]`).text(attribute[1]);
+  });
+}
