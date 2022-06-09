@@ -572,6 +572,10 @@ footer {
           transform: translateY(-0.2rem);
 }
 
+.not-live {
+  cursor: not-allowed;
+}
+
 .contact--grid {
   -ms-grid-columns: 4fr 6fr;
       grid-template-columns: 4fr 6fr;
