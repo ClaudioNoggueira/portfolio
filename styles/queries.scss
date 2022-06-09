@@ -220,18 +220,12 @@ $phones: 34em;
   }
 
   .work {
-    &--grid {
-      grid-template-columns: 1fr;
-    }
-
     &-details {
-      align-items: center;
-      flex-direction: row;
       justify-content: space-between;
     }
 
-    &-assignments {
-      grid-column: 1;
+    & .image-container {
+      grid-row: 1;
     }
   }
 

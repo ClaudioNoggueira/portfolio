@@ -38,6 +38,19 @@ strong {
   font-weight: 500;
 }
 
+img {
+  width: 100%;
+}
+
+.image {
+  display: block;
+}
+
+.image-container {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 footer {
   border-top: 1px solid #eee;
 }
@@ -396,35 +409,16 @@ footer {
   margin-bottom: 3.6rem;
 }
 
-.work--grid {
-  -ms-grid-columns: 1fr 1fr 2fr;
-      grid-template-columns: 1fr 1fr 2fr;
-}
-
 .work strong {
   margin-right: 1rem;
 }
 
 .work-details {
-  -ms-grid-column: 1;
-  grid-column: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.2rem;
-}
-
-.work-assignments {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  grid-column: 2 / -1;
-  text-align: justify;
 }
 
 .education {

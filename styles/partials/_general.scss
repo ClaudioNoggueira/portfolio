@@ -53,6 +53,19 @@ strong {
   font-weight: 500;
 }
 
+img {
+  width: 100%;
+}
+
+.image {
+  display: block;
+
+  &-container {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
+
 footer {
   border-top: 1px solid #eee;
 }
