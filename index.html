@@ -57,18 +57,20 @@
     <main>
         <section class="hero-section">
             <div class="hero flex">
-                <div class="languages-button">
-                    <button id="portuguese" name="changeLanguage">Trocar idioma para português</button>
-                </div>
                 <h1 class=" heading-primary" name="heroHeadingPrimary">Hi, I'm Claudio. Nice to meet you.</h1>
                 <span class="subheading" name="heroSubheading">Back-End Developer</span>
                 <p class="hero-description" name="heroDescription">IT and Administration Technician, future Technologist
                     in Systems
                     Analysis
                     and Development</p>
-                <div class="flex">
+                <div class="flex margin-bottom-big">
                     <a href="#contact" class="btn btn--full" name="heroGetInTouch">Get in touch</a>
                     <a href="#projects" class="btn btn--outline" name="heroProjects">See my projects</a>
+                </div>
+                <div class="language-switch-container">
+                    <label for="changeLanguage" id="switch-label">Trocar idioma para português</label>
+                    <button class="flex checkbox" role="switch" aria-checked="false" id="portuguese"
+                        name="changeLanguage"></button>
                 </div>
             </div>
         </section>

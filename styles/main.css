@@ -314,9 +314,44 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 40rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.4rem;
+}
+
+.language-switch-container label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.language-switch-container .checkbox {
+  background-color: transparent;
+  border: solid 2px #0cd061;
+  border-radius: 24px;
+  cursor: pointer;
+  height: 3.2rem;
+  margin: 1.2rem auto;
+  padding: 0.4rem;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  width: 5.2rem;
+}
+
+.language-switch-container .checkbox::before {
+  content: "";
+  background-color: #333;
+  border-radius: 12px;
+  display: inline-block;
+  height: 1.8rem;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  width: 1.8rem;
+}
+
+.language-switch-container .checkbox.on::before {
+  -webkit-transform: translateX(18px);
+          transform: translateX(18px);
 }
 
 .about-text {
