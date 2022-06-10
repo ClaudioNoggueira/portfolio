@@ -423,7 +423,6 @@ footer {
 }
 
 .education .image {
-  height: 22rem;
   margin-bottom: 2.4rem;
 }
 
@@ -442,19 +441,36 @@ footer {
 .certifications {
   font-size: 1.6rem;
   line-height: 1.5;
-  gap: 4.8rem;
+  gap: 3.6rem;
 }
 
-.certifications .certification-details div {
-  margin-bottom: 0.6rem;
+.certifications .image {
+  margin-bottom: 0.8rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.certifications .certification-details div i {
-  line-height: 1;
+.certifications .image-container {
+  overflow: visible;
 }
 
-.certifications .certification-details strong {
-  margin-right: 1rem;
+.certifications .image:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.certifications .certification-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.certifications .certification-details {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.8rem;
 }
 
 .skills {

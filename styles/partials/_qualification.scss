@@ -42,7 +42,6 @@ $brand-color-tint-90: hsl($hue-color, 66%, 94%);
   }
 
   .image {
-    height: 22rem;
     margin-bottom: 2.4rem;
   }
 
@@ -63,20 +62,31 @@ $brand-color-tint-90: hsl($hue-color, 66%, 94%);
   & {
     font-size: 1.6rem;
     line-height: 1.5;
-    gap: 4.8rem;
+    gap: 3.6rem;
   }
 
-  .certification-details {
-    div {
-      margin-bottom: 0.6rem;
+  .image {
+    margin-bottom: 0.8rem;
+    transition: all 0.5s;
 
-      i {
-        line-height: 1;
-      }
+    &-container {
+      overflow: visible;
     }
 
-    strong {
-      margin-right: 1rem;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  .certification {
+    &-title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 2.4rem;
+    }
+    &-details {
+      flex-direction: column;
+      padding: 0.8rem;
     }
   }
 }
