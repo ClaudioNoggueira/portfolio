@@ -63,7 +63,7 @@ const dictionary = {
     qualificationCertificationsTotalHours: `Total de horas: `,
     qualificationCertificationsConclusion: `Conclusão: `,
     qualificationCertificationsInstructor: `Instrutor: `,
-    qualificationCertificationsCourseLink: `Site do curso `,
+    qualificationCertificationsLink: `Link do certificado `,
 
     // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
     // SKILLS

@@ -10,25 +10,17 @@ $brand-color-tint-90: hsl($hue-color, 66%, 94%);
 .qualification {
   &-icon {
     color: $brand-color-shade-10;
-    border-radius: 50%;
-    background-color: $brand-color-tint-90;
     display: inline-block;
-    font-size: 3.6rem;
-    margin: 0.8rem auto;
-    padding: 1.2rem;
-    align-self: center;
+    font-size: 2.4rem;
+    margin-right: 1rem;
   }
 }
 .work {
   & {
     column-gap: 4.8rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1.5;
     margin-bottom: 3.6rem;
-  }
-
-  &--grid {
-    grid-template-columns: 1fr 1fr 2fr;
   }
 
   strong {
@@ -36,15 +28,8 @@ $brand-color-tint-90: hsl($hue-color, 66%, 94%);
   }
 
   &-details {
-    grid-column: 1;
     flex-direction: column;
     gap: 1.2rem;
-  }
-
-  &-assignments {
-    flex-direction: column;
-    justify-content: space-between;
-    grid-column: 2 / -1;
     text-align: justify;
   }
 }
@@ -54,6 +39,10 @@ $brand-color-tint-90: hsl($hue-color, 66%, 94%);
     column-gap: 4.8rem;
     font-size: 1.6rem;
     line-height: 1.5;
+  }
+
+  .image {
+    margin-bottom: 2.4rem;
   }
 
   div {
@@ -73,20 +62,31 @@ $brand-color-tint-90: hsl($hue-color, 66%, 94%);
   & {
     font-size: 1.6rem;
     line-height: 1.5;
-    gap: 4.8rem;
+    gap: 3.6rem;
   }
 
-  .certification-details {
-    div {
-      margin-bottom: 0.6rem;
+  .image {
+    margin-bottom: 0.8rem;
+    transition: all 0.5s;
 
-      i {
-        line-height: 1;
-      }
+    &-container {
+      overflow: visible;
     }
 
-    strong {
-      margin-right: 1rem;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  .certification {
+    &-title {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-bottom: 2.4rem;
+    }
+    &-details {
+      flex-direction: column;
+      padding: 0.8rem;
     }
   }
 }

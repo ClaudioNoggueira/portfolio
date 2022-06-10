@@ -38,6 +38,18 @@ strong {
   font-weight: 500;
 }
 
+img {
+  width: 100%;
+}
+
+.image {
+  display: block;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
 footer {
   border-top: 1px solid #eee;
 }
@@ -377,28 +389,17 @@ footer {
 
 .qualification-icon {
   color: #0bbc58;
-  border-radius: 50%;
-  background-color: #e6faee;
   display: inline-block;
-  font-size: 3.6rem;
-  margin: 0.8rem auto;
-  padding: 1.2rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  font-size: 2.4rem;
+  margin-right: 1rem;
 }
 
 .work {
   -webkit-column-gap: 4.8rem;
           column-gap: 4.8rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 3.6rem;
-}
-
-.work--grid {
-  -ms-grid-columns: 1fr 1fr 2fr;
-      grid-template-columns: 1fr 1fr 2fr;
 }
 
 .work strong {
@@ -406,24 +407,11 @@ footer {
 }
 
 .work-details {
-  -ms-grid-column: 1;
-  grid-column: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.2rem;
-}
-
-.work-assignments {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  grid-column: 2 / -1;
   text-align: justify;
 }
 
@@ -432,6 +420,10 @@ footer {
           column-gap: 4.8rem;
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+.education .image {
+  margin-bottom: 2.4rem;
 }
 
 .education div {
@@ -449,19 +441,36 @@ footer {
 .certifications {
   font-size: 1.6rem;
   line-height: 1.5;
-  gap: 4.8rem;
+  gap: 3.6rem;
 }
 
-.certifications .certification-details div {
-  margin-bottom: 0.6rem;
+.certifications .image {
+  margin-bottom: 0.8rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
-.certifications .certification-details div i {
-  line-height: 1;
+.certifications .image-container {
+  overflow: visible;
 }
 
-.certifications .certification-details strong {
-  margin-right: 1rem;
+.certifications .image:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.certifications .certification-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.certifications .certification-details {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.8rem;
 }
 
 .skills {

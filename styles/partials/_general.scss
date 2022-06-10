@@ -53,6 +53,18 @@ strong {
   font-weight: 500;
 }
 
+img {
+  width: 100%;
+}
+
+.image {
+  display: block;
+
+  &-container {
+    overflow: hidden;
+  }
+}
+
 footer {
   border-top: 1px solid #eee;
 }
