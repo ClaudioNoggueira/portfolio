@@ -205,9 +205,6 @@ $phones: 34em;
   }
 
   .about {
-    &-text-container {
-      text-align: center;
-    }
     div {
       flex-direction: column;
       gap: 2.4rem;
@@ -230,17 +227,13 @@ $phones: 34em;
   }
 
   .education {
-    & {
-      text-align: center;
-    }
-
     .course-details {
       margin-bottom: 4.8rem;
     }
   }
 
   .certifications {
-    & {
+    .certification-title {
       text-align: center;
     }
   }
