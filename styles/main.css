@@ -47,7 +47,6 @@ img {
 }
 
 .image-container {
-  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -390,21 +389,15 @@ footer {
 
 .qualification-icon {
   color: #0bbc58;
-  border-radius: 50%;
-  background-color: #e6faee;
   display: inline-block;
-  font-size: 3.6rem;
-  margin: 0.8rem auto;
-  padding: 1.2rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  font-size: 2.4rem;
+  margin-right: 1rem;
 }
 
 .work {
   -webkit-column-gap: 4.8rem;
           column-gap: 4.8rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 3.6rem;
 }
@@ -419,6 +412,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.2rem;
+  text-align: justify;
 }
 
 .education {
@@ -426,6 +420,11 @@ footer {
           column-gap: 4.8rem;
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+.education .image {
+  height: 22rem;
+  margin-bottom: 2.4rem;
 }
 
 .education div {
