@@ -173,20 +173,24 @@ footer {
   text-align: center;
 }
 
-.margin-bottom-small {
-  margin-bottom: 1.2rem;
-}
+.margin {
+  &-bottom {
+    &-small {
+      margin-bottom: 1.2rem;
+    }
 
-.margin-bottom-medium {
-  margin-bottom: 2.4rem;
-}
+    &-medium {
+      margin-bottom: 2.4rem;
+    }
 
-.margin-bottom-big {
-  margin-bottom: 4.8rem;
-}
+    &-big {
+      margin-bottom: 4.8rem;
+    }
 
-.margin-bottom-bigger {
-  margin-bottom: 6.4rem;
+    &-bigger {
+      margin-bottom: 6.4rem;
+    }
+  }
 }
 
 // BUTTONS

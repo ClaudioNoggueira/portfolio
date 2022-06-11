@@ -394,6 +394,12 @@ footer {
   margin-right: 1rem;
 }
 
+.qualification-hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 6.4rem 0 3.6rem 0;
+}
+
 .work {
   -webkit-column-gap: 4.8rem;
           column-gap: 4.8rem;
@@ -415,33 +421,43 @@ footer {
   text-align: justify;
 }
 
-.education {
+.educations {
   -webkit-column-gap: 4.8rem;
           column-gap: 4.8rem;
   font-size: 1.6rem;
   line-height: 1.5;
 }
 
-.education .image {
-  margin-bottom: 2.4rem;
+.educations .education-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  height: 8rem;
 }
 
-.education div {
-  margin-bottom: 0.6rem;
+.educations .education-details {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2;
 }
 
-.education div i {
+.educations .education-details .education-icon {
+  background-color: #e6faee;
+  border-radius: 50%;
+  font-size: 3.6rem;
   line-height: 1;
-}
-
-.education strong {
-  margin-right: 1rem;
+  margin: 4.8rem 0 3.6rem 0;
+  padding: 1.8rem;
 }
 
 .certifications {
   font-size: 1.6rem;
   line-height: 1.5;
-  gap: 3.6rem;
+  gap: 4.8rem;
 }
 
 .certifications .image {
