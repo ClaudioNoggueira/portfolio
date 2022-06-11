@@ -55,9 +55,10 @@ $brand-color-tint-90: hsl($hue-color, 66%, 94%);
     }
 
     &-details {
-      align-items: flex-start;
+      align-items: center;
       flex-direction: column;
       gap: 1.2;
+      justify-content: center;
 
       .education-icon {
         background-color: $brand-color-tint-90;
