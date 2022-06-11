@@ -50,19 +50,15 @@ const dictionary = {
 
     // QUALIFICATION EDUCATION
     qualificationEducationHeadingTertiary: `Acadêmica`,
-    qualificationEducationCourse: `Curso: `,
-    qualificationEducationLevel: `Nível: `,
-    qualificationEducationLevelTechnical: `Técnico`,
-    qualificationEducationInstitute: `Instituição: `,
-    qualificationEducationDate: `Período: `,
+    qualificationEducationTechnologist: `Técnólogo em Análise e Desenvolvimento de Sistemas`,
+    qualificationEducationTechnicalAdministration: `Técnico em Administração`,
+    qualificationEducationTechnicalComputer: `Técnico em Informática`,
+    qualificationEducationTechnologyCollege: `Faculdade de Tecnologia da Zona Sul`,
+    qualificationEducationTechnicalSchool: `Escola Técnica Irmã Agostina`,
     qualificationEducationWebsiteLink: `Ver site da instituição `,
 
     // QUALIFICATION CERTIFICATIONS
     qualificationCertificationsHeadingTertiary: `Certificações`,
-    qualificationCertificationsCourse: `Curso: `,
-    qualificationCertificationsTotalHours: `Total de horas: `,
-    qualificationCertificationsConclusion: `Conclusão: `,
-    qualificationCertificationsInstructor: `Instrutor: `,
     qualificationCertificationsLink: `Link do certificado `,
 
     // ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////// ///////////////////////////////////////////////////////////////
