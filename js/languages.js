@@ -117,22 +117,22 @@ const dictionary = {
 // Language changing function to PORTUGUESE
 function translateToPortuguese() {
   const portuguese = dictionary.portuguese;
-  // Convert portuguese object to array and map through each value (which are the object attributes)
-  Object.entries(portuguese).map((attribute) => {
-    // attribute[0] = name of the attribute, which is the same name of the name attributes in the HTML
-    // attribute[1] = value of the attribute (translated words and sentences)
-    $(`[name="${attribute[0]}"]`).text(attribute[1]);
-  });
+
+  // Attribute value is the same of the values of name properties in HTML elements
+  const entries = Object.entries(portuguese);
+  for (const [attribute, value] of entries) {
+    $(`[name="${attribute}"]`).text(value);
+  }
 }
 
 document.getElementsByName(`changeLanguage`).forEach((button) => {
   button.addEventListener(`click`, () => {
-    const switchLabel = document.getElementById(`switch-label`);
+    const switchLabel = $(`#switch-label`);
     if (button.classList.contains(`on`)) {
-      switchLabel.textContent = `Trocar idioma para português`;
+      switchLabel.text(`Trocar idioma para português`);
       location.reload();
     } else {
-      switchLabel.textContent = `Change language to english`;
+      switchLabel.text(`Change language to english`);
       translateToPortuguese();
     }
 
